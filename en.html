@@ -1,0 +1,3678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAMOX Electrique — Electrician in Saint-Laurent, Montreal | Emergency Repairs &amp; Installation | Free Quote</title>
+  <meta name="description"
+    content="SAMOX Electrique, electrician in Saint-Laurent (Montreal, Quebec). Emergency repairs, installation, code compliance, renovation. Free quote, open 7 days a week from 7 AM to 9 PM. Call +1 514-662-0703." />
+  <meta property="og:title" content="SAMOX Electrique — Electrician in Saint-Laurent, Montreal" />
+  <meta property="og:description"
+    content="Electrical repairs, installation, code compliance and renovation. Free quote, 7 days a week from 7 AM to 9 PM in Saint-Laurent and Greater Montreal." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="Logo.PNG" />
+  <meta property="og:locale" content="en_CA" />
+  <link rel="icon" type="image/png" href="logo-samox-320.png" />
+  <!-- hreflang: replace with absolute domain URLs at deployment -->
+  <link rel="alternate" hreflang="fr-CA" href="index.html" />
+  <link rel="alternate" hreflang="en-CA" href="en.html" />
+
+  <!-- Self-hosted fonts: no request sent to Google (GDPR art. 6 / Quebec Law 25 compliance) -->
+  <link href="fonts/fonts.css" rel="stylesheet" />
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "SAMOX Electrique",
+    "image": "Logo.PNG",
+    "telephone": "+1-514-662-0703",
+    "email": "samoxelectrique@gmail.com",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "730 Boul Montpellier",
+      "addressLocality": "Saint-Laurent",
+      "addressRegion": "QC",
+      "postalCode": "H4L 5B3",
+      "addressCountry": "CA"
+    },
+    "areaServed": ["Saint-Laurent", "Montréal", "Laval", "Mont-Royal", "Ahuntsic-Cartierville", "Dorval"],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "07:00",
+      "closes": "21:00"
+    }]
+  }
+  </script>
+
+  <style>
+    /* ═══════════════════════════════════════════════════
+       SAMOX ELECTRIQUE — Design System
+       Orange signature + noir profond, fond clair premium
+    ═══════════════════════════════════════════════════ */
+    :root {
+      --sx-orange: #F58220;
+      --sx-orange-deep: #DD6A05;
+      --sx-orange-glow: rgba(245, 130, 32, 0.32);
+      --sx-orange-soft: #FFF3E6;
+      --sx-black: #0C0D0F;
+      --sx-anthracite: #17181C;
+      --sx-ink: #1A1B1E;
+      --sx-text: #43454C;
+      --sx-muted: #797C84;
+      --sx-bg: #FAF9F6;
+      --sx-card: #FFFFFF;
+      --sx-border: #ECE8E1;
+      --sx-radius: 18px;
+      --font-display: 'Archivo', 'Inter', system-ui, sans-serif;
+      --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      font-weight: 400;
+      background: var(--sx-bg);
+      color: var(--sx-text);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+
+    ::selection { background: var(--sx-orange); color: #fff; }
+
+    /* ── Utilitaires typographiques ── */
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      color: var(--sx-ink);
+      letter-spacing: -0.02em;
+    }
+
+    .section-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--sx-orange-deep);
+    }
+
+    .section-kicker::before,
+    .section-kicker.kicker-center::after {
+      content: "";
+      width: 28px;
+      height: 2px;
+      border-radius: 2px;
+      background: var(--sx-orange);
+    }
+
+    .section-heading h2 {
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 700;
+      line-height: 1.06;
+      margin: 14px 0 14px;
+    }
+
+    .section-heading p {
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--sx-muted);
+      max-width: 560px;
+    }
+
+    .section-heading.centered { text-align: center; }
+    .section-heading.centered p { margin: 0 auto; }
+
+    /* ── Reveal animations (activées seulement si JS présent) ── */
+    html.js .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    html.js .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    .reveal-delay-1 { transition-delay: 0.08s; }
+    .reveal-delay-2 { transition-delay: 0.16s; }
+    .reveal-delay-3 { transition-delay: 0.24s; }
+    .reveal-delay-4 { transition-delay: 0.32s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      html.js .reveal { opacity: 1; transform: none; transition: none; }
+      * { animation: none !important; }
+    }
+
+    /* ═══════════════════════════════════════════════════
+       HEADER
+    ═══════════════════════════════════════════════════ */
+    .site-header {
+      position: fixed;
+      top: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(1240px, calc(100% - 40px));
+      z-index: 60;
+      height: 74px;
+      padding: 0 14px 0 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      border-radius: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.72);
+      box-shadow: 0 10px 34px rgba(12, 13, 15, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(22px) saturate(1.4);
+      -webkit-backdrop-filter: blur(22px) saturate(1.4);
+      transition: box-shadow 0.3s, background 0.3s;
+    }
+
+    .site-header.scrolled {
+      background: rgba(255, 255, 255, 0.92);
+      box-shadow: 0 14px 40px rgba(12, 13, 15, 0.12);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .brand-logo {
+      width: 50px;
+      height: 50px;
+      border-radius: 13px;
+      background: var(--sx-black);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 16px rgba(12, 13, 15, 0.24);
+    }
+
+    .brand-logo img {
+      width: 130%;
+      height: 130%;
+      object-fit: cover;
+      object-position: center 38%;
+    }
+
+    .brand-copy { display: flex; flex-direction: column; gap: 5px; }
+
+    .brand-copy strong {
+      font-family: var(--font-display);
+      color: var(--sx-ink);
+      font-size: 20px;
+      line-height: 1;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    .brand-copy small {
+      color: var(--sx-orange-deep);
+      font-size: 10.5px;
+      line-height: 1;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 34px;
+    }
+
+    .main-nav a {
+      position: relative;
+      color: var(--sx-ink);
+      text-decoration: none;
+      font-size: 14.5px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      transition: color 0.22s;
+    }
+
+    .main-nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      border-radius: 2px;
+      background: var(--sx-orange);
+      transition: width 0.28s ease;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active { color: var(--sx-orange-deep); }
+
+    .main-nav a:hover::after,
+    .main-nav a.active::after { width: 100%; }
+
+    .header-phone-btn {
+      height: 48px;
+      padding: 0 22px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border-radius: 999px;
+      background: var(--sx-black);
+      color: #fff;
+      text-decoration: none;
+      font-family: var(--font-display);
+      font-size: 14.5px;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      box-shadow: 0 8px 20px rgba(12, 13, 15, 0.22);
+      transition: background 0.25s, transform 0.25s, box-shadow 0.25s;
+      flex-shrink: 0;
+    }
+
+    .header-phone-btn:hover {
+      background: var(--sx-orange);
+      transform: translateY(-1px);
+      box-shadow: 0 12px 26px var(--sx-orange-glow);
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      padding: 0 14px;
+      border-radius: 999px;
+      border: 1.5px solid var(--sx-border);
+      background: #fff;
+      color: var(--sx-ink);
+      text-decoration: none;
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      flex-shrink: 0;
+      transition: border-color 0.25s, color 0.25s, transform 0.25s;
+    }
+
+    .lang-switch:hover {
+      border-color: var(--sx-orange);
+      color: var(--sx-orange-deep);
+      transform: translateY(-1px);
+    }
+
+    .mobile-menu .mobile-menu-lang {
+      font-size: 16px;
+      color: var(--sx-muted);
+      letter-spacing: 0.08em;
+    }
+
+    .header-phone-btn svg,
+    .btn svg {
+      width: 19px;
+      height: 19px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.9;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
+    }
+
+    /* ── Burger mobile ── */
+    .burger {
+      display: none;
+      width: 46px;
+      height: 46px;
+      border: 1px solid var(--sx-border);
+      border-radius: 12px;
+      background: #fff;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .burger span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      border-radius: 2px;
+      background: var(--sx-ink);
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .burger.open span:nth-child(2) { opacity: 0; }
+    .burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-menu {
+      position: fixed;
+      inset: 0;
+      z-index: 55;
+      background: rgba(250, 249, 246, 0.98);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+
+    .mobile-menu.open { opacity: 1; pointer-events: auto; }
+
+    .mobile-menu a {
+      font-family: var(--font-display);
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--sx-ink);
+      text-decoration: none;
+      padding: 10px 18px;
+      transition: color 0.2s;
+    }
+
+    .mobile-menu a:hover { color: var(--sx-orange-deep); }
+
+    .mobile-menu .mobile-menu-phone {
+      margin-top: 18px;
+      font-size: 19px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+      background: var(--sx-orange);
+      border-radius: 999px;
+      padding: 15px 30px;
+      box-shadow: 0 14px 30px var(--sx-orange-glow);
+    }
+
+    .mobile-menu .mobile-menu-phone svg {
+      width: 20px; height: 20px;
+      fill: none; stroke: currentColor; stroke-width: 2;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       HERO
+    ═══════════════════════════════════════════════════ */
+    .hero {
+      position: relative;
+      width: 100%;
+      min-height: 100dvh;
+      overflow: hidden;
+      background: var(--sx-bg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 130px;
+      padding-bottom: 110px;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: -240px 0 0;
+      z-index: 0;
+      background-image:
+        linear-gradient(90deg,
+          rgba(9, 10, 13, 0.92) 0%,
+          rgba(9, 10, 13, 0.82) 30%,
+          rgba(9, 10, 13, 0.52) 52%,
+          rgba(9, 10, 13, 0.14) 74%,
+          rgba(9, 10, 13, 0.06) 100%),
+        linear-gradient(0deg, rgba(9, 10, 13, 0.55) 0%, rgba(9, 10, 13, 0) 28%),
+        url("hero-samox.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      will-change: transform;
+    }
+
+    .hero-bg::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(820px 420px at 12% 80%, rgba(245, 130, 32, 0.14), transparent 70%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      width: min(1240px, 100%);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 18px 9px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(245, 130, 32, 0.5);
+      background: rgba(12, 13, 15, 0.55);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      color: #FFA149;
+      font-family: var(--font-display);
+      font-size: 12.5px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 26px;
+    }
+
+    .hero-eyebrow .pulse-dot {
+      position: relative;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--sx-orange);
+    }
+
+    .hero-eyebrow .pulse-dot::after {
+      content: "";
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 2px solid var(--sx-orange);
+      opacity: 0.5;
+      animation: pulse-ring 2s ease-out infinite;
+    }
+
+    @keyframes pulse-ring {
+      0% { transform: scale(0.6); opacity: 0.6; }
+      80%, 100% { transform: scale(1.4); opacity: 0; }
+    }
+
+    .hero h1 {
+      max-width: 700px;
+      font-size: clamp(46px, 6vw, 84px);
+      line-height: 0.98;
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      color: #fff;
+      text-shadow: 0 2px 24px rgba(9, 10, 13, 0.45);
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--sx-orange);
+      position: relative;
+      white-space: nowrap;
+    }
+
+    .hero-sub {
+      margin-top: 24px;
+      max-width: 520px;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 17.5px;
+      line-height: 1.6;
+      text-shadow: 0 1px 14px rgba(9, 10, 13, 0.4);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .btn {
+      height: 56px;
+      padding: 0 28px;
+      border-radius: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      text-decoration: none;
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      transition: transform 0.24s, box-shadow 0.24s, background 0.24s, color 0.24s;
+    }
+
+    .btn-primary {
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+      background: linear-gradient(135deg, #FF9840 0%, var(--sx-orange) 45%, var(--sx-orange-deep) 100%);
+      box-shadow: 0 16px 32px var(--sx-orange-glow), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+    }
+
+    .btn-primary::after {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -60%;
+      width: 30%;
+      height: 200%;
+      background: rgba(255, 255, 255, 0.28);
+      transform: skewX(-20deg);
+      transition: left 0.5s ease;
+    }
+
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 20px 40px var(--sx-orange-glow); }
+    .btn-primary:hover::after { left: 135%; }
+
+    .btn-dark {
+      color: #fff;
+      background: var(--sx-black);
+      box-shadow: 0 14px 28px rgba(12, 13, 15, 0.2);
+    }
+
+    .btn-dark:hover { transform: translateY(-2px); background: var(--sx-anthracite); }
+
+    .btn-outline {
+      color: #fff;
+      border: 1.5px solid rgba(255, 255, 255, 0.45);
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .btn-outline:hover {
+      transform: translateY(-2px);
+      border-color: var(--sx-orange);
+      color: #FFA149;
+    }
+
+    /* ── Badge Google ── */
+    .google-badge {
+      margin-top: 26px;
+      width: fit-content;
+      height: 48px;
+      padding: 0 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(12, 13, 15, 0.55);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .google-badge .google-icon { width: 20px; height: 20px; flex: 0 0 auto; }
+    .google-badge-label { color: rgba(255, 255, 255, 0.78); font-size: 13px; font-weight: 500; }
+    .google-stars { color: var(--sx-orange); font-size: 16px; letter-spacing: 0.04em; }
+    .google-score { color: #fff; font-size: 14px; font-weight: 600; }
+
+    /* ── Barre de confiance ── */
+    .hero-trust-bar {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 26px;
+      z-index: 4;
+      width: min(1240px, calc(100% - 48px));
+      min-height: 74px;
+      padding: 12px 32px;
+      display: grid;
+      grid-template-columns: 1fr 1px 1fr 1px 1fr;
+      align-items: center;
+      gap: 24px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.85);
+      background: rgba(255, 255, 255, 0.78);
+      box-shadow: 0 10px 32px rgba(12, 13, 15, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    .trust-bar-item { display: flex; align-items: center; gap: 14px; }
+
+    .trust-bar-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--sx-orange-soft);
+      color: var(--sx-orange-deep);
+    }
+
+    .trust-bar-icon svg {
+      width: 21px; height: 21px;
+      fill: none; stroke: currentColor; stroke-width: 1.9;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    .trust-bar-text { display: flex; flex-direction: column; gap: 3px; }
+    .trust-bar-text strong { color: var(--sx-ink); font-family: var(--font-display); font-size: 14.5px; font-weight: 700; }
+    .trust-bar-text span { color: var(--sx-muted); font-size: 12.5px; }
+    .trust-bar-sep { width: 1px; height: 38px; background: rgba(12, 13, 15, 0.08); }
+
+    /* ═══════════════════════════════════════════════════
+       SERVICES
+    ═══════════════════════════════════════════════════ */
+    .services-section {
+      background: linear-gradient(180deg, var(--sx-bg) 0%, #F4F1EB 100%);
+      padding: 110px 24px;
+    }
+
+    .services-container { width: min(1240px, 100%); margin: 0 auto; }
+
+    .services-heading { text-align: center; margin-bottom: 60px; }
+    .services-heading h2 { font-size: clamp(32px, 4vw, 48px); font-weight: 700; margin: 14px 0; }
+    .services-heading p { font-size: 17px; color: var(--sx-muted); max-width: 520px; margin: 0 auto; }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      display: flex;
+      flex-direction: column;
+      background: var(--sx-card);
+      border: 1px solid var(--sx-border);
+      border-radius: var(--sx-radius);
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(12, 13, 15, 0.05);
+      transition: transform 0.32s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.32s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 22px 44px rgba(12, 13, 15, 0.12);
+    }
+
+    .service-image {
+      height: 175px;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.5s ease;
+      position: relative;
+    }
+
+    .service-card .service-image-wrap { overflow: hidden; height: 175px; flex-shrink: 0; }
+    .service-card:hover .service-image { transform: scale(1.06); }
+
+    .service-image.depannage { background-image: url("Dépanage électrique.webp"); }
+    .service-image.installation { background-image: url("Instalation électrique.webp"); }
+    .service-image.normes { background-image: url("Mise au norme.webp"); }
+    .service-image.renovation { background-image: url("Rénovation électrique.webp"); }
+
+    .service-content {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 24px 24px 26px;
+    }
+
+    .service-icon-inline {
+      width: 46px;
+      height: 46px;
+      margin-top: -47px;
+      margin-bottom: 16px;
+      border-radius: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #FF9840, var(--sx-orange-deep));
+      color: #fff;
+      box-shadow: 0 10px 22px var(--sx-orange-glow);
+      position: relative;
+      z-index: 2;
+    }
+
+    .service-icon-inline svg {
+      width: 22px; height: 22px;
+      fill: none; stroke: currentColor; stroke-width: 1.9;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    .service-content h3 { font-size: 19px; font-weight: 700; margin-bottom: 10px; }
+    .service-content p { font-size: 14px; line-height: 1.62; color: var(--sx-muted); flex: 1; }
+
+    .service-cta {
+      margin-top: 18px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--sx-orange-deep);
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .service-cta-arrow { transition: transform 0.25s; }
+    .service-cta:hover .service-cta-arrow { transform: translateX(5px); }
+
+    /* ═══════════════════════════════════════════════════
+       POURQUOI SAMOX
+    ═══════════════════════════════════════════════════ */
+    .why-section {
+      background: var(--sx-bg);
+      padding: 110px 24px;
+    }
+
+    .why-container { width: min(1240px, 100%); margin: 0 auto; }
+
+    .why-header { text-align: center; margin-bottom: 60px; }
+    .why-header h2 { font-size: clamp(32px, 4vw, 48px); font-weight: 700; margin: 14px 0; }
+    .why-header > p { font-size: 17px; color: var(--sx-muted); max-width: 560px; margin: 0 auto; }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 54px;
+      align-items: center;
+    }
+
+    .why-cards { display: flex; flex-direction: column; gap: 18px; }
+
+    .why-card {
+      display: flex;
+      gap: 18px;
+      padding: 24px 26px;
+      background: var(--sx-card);
+      border: 1px solid var(--sx-border);
+      border-radius: var(--sx-radius);
+      box-shadow: 0 4px 16px rgba(12, 13, 15, 0.04);
+      transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    }
+
+    .why-card:hover {
+      transform: translateX(6px);
+      border-color: rgba(245, 130, 32, 0.4);
+      box-shadow: 0 14px 30px rgba(12, 13, 15, 0.09);
+    }
+
+    .why-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--sx-orange-soft);
+      color: var(--sx-orange-deep);
+    }
+
+    .why-icon svg { width: 24px; height: 24px; }
+
+    .why-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 7px; }
+    .why-card p { font-size: 14.5px; line-height: 1.6; color: var(--sx-muted); }
+
+    .why-visual { position: relative; }
+
+    /* Cadre orange décalé derrière la photo */
+    .why-visual::before {
+      content: "";
+      position: absolute;
+      top: -18px;
+      right: -18px;
+      width: 58%;
+      height: 55%;
+      border: 2px solid rgba(245, 130, 32, 0.45);
+      border-radius: 26px;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* Grille de points orange */
+    .why-visual .why-dots {
+      position: absolute;
+      top: -44px;
+      left: -34px;
+      width: 130px;
+      height: 110px;
+      background: radial-gradient(circle at 2px 2px, rgba(245, 130, 32, 0.5) 2.2px, transparent 0);
+      background-size: 17px 17px;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .why-photo {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 480px;
+      border-radius: 22px;
+      background-image: url("Dépanage électrique.webp");
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 26px 60px rgba(12, 13, 15, 0.16);
+      overflow: hidden;
+    }
+
+    .why-photo::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 22px;
+      background:
+        linear-gradient(180deg, rgba(12, 13, 15, 0) 55%, rgba(12, 13, 15, 0.38) 100%),
+        linear-gradient(200deg, rgba(245, 130, 32, 0.12), transparent 45%);
+      pointer-events: none;
+    }
+
+    /* Pastille flottante sur la photo */
+    .photo-chip {
+      position: absolute;
+      top: 22px;
+      right: 22px;
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 11px 18px;
+      border-radius: 999px;
+      background: rgba(12, 13, 15, 0.62);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      color: #fff;
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .photo-chip svg {
+      width: 16px;
+      height: 16px;
+      fill: none;
+      stroke: var(--sx-orange);
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .review-card {
+      position: absolute;
+      left: -34px;
+      bottom: -36px;
+      width: min(480px, calc(100% + 34px));
+      display: grid;
+      grid-template-columns: auto 1px 1fr;
+      gap: 20px;
+      padding: 26px 26px 24px;
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      border-radius: 18px;
+      box-shadow: 0 30px 60px rgba(12, 13, 15, 0.18), 0 4px 14px rgba(12, 13, 15, 0.06);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      z-index: 3;
+      overflow: hidden;
+    }
+
+    .review-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #FF9840, var(--sx-orange-deep));
+    }
+
+    .review-google { display: flex; flex-direction: column; gap: 6px; }
+    .google-g-row { display: flex; align-items: center; gap: 9px; }
+    .google-g-icon { width: 26px; height: 26px; }
+    .google-g-text { display: flex; flex-direction: column; }
+    .google-g-text strong { font-size: 13.5px; color: var(--sx-ink); }
+    .google-g-text span { font-size: 10.5px; color: var(--sx-muted); }
+
+    .review-score { font-family: var(--font-display); font-size: 34px; font-weight: 800; color: var(--sx-ink); line-height: 1; margin-top: 4px; }
+    .review-score span { font-size: 16px; color: var(--sx-muted); font-weight: 600; }
+    .review-stars { color: var(--sx-orange); font-size: 15px; letter-spacing: 0.06em; }
+    .review-google-base { font-size: 11px; color: var(--sx-muted); }
+
+    .review-sep { width: 1px; background: var(--sx-border); }
+
+    .testimonial { position: relative; }
+
+    .quote-icon {
+      font-family: Georgia, serif;
+      font-size: 42px;
+      line-height: 0.6;
+      color: var(--sx-orange);
+      margin-bottom: 8px;
+    }
+
+    .testimonial-text { font-size: 13.5px; line-height: 1.6; color: var(--sx-text); }
+
+    .testimonial-author {
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .testimonial-avatar {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--sx-black);
+      color: var(--sx-orange);
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .testimonial-author strong { display: block; font-size: 13px; color: var(--sx-ink); }
+    .testimonial-author span { font-size: 11.5px; color: var(--sx-muted); }
+
+    /* ═══════════════════════════════════════════════════
+       RÉALISATIONS
+    ═══════════════════════════════════════════════════ */
+    .realisations-section {
+      background: linear-gradient(180deg, #F4F1EB 0%, var(--sx-bg) 100%);
+      padding: 110px 24px;
+    }
+
+    .realisations-container { width: min(1240px, 100%); margin: 0 auto; }
+
+    .realisations-heading { text-align: center; margin-bottom: 60px; }
+    .realisations-heading h2 { font-size: clamp(32px, 4vw, 48px); font-weight: 700; margin: 14px 0; }
+    .realisations-heading p { font-size: 17px; color: var(--sx-muted); max-width: 520px; margin: 0 auto; }
+
+    .realisations-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 26px;
+    }
+
+    .realisation-card {
+      position: relative;
+      background: var(--sx-card);
+      border: 1px solid var(--sx-border);
+      border-radius: var(--sx-radius);
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(12, 13, 15, 0.05);
+      transition: transform 0.32s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.32s;
+    }
+
+    .realisation-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 48px rgba(12, 13, 15, 0.13);
+    }
+
+    .realisation-image-wrap { overflow: hidden; height: 250px; }
+
+    .realisation-image {
+      height: 250px;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.55s ease;
+    }
+
+    .realisation-card:hover .realisation-image { transform: scale(1.06); }
+
+    .real-img-1 { background-image: url("realisation-tableau-electrique.webp"); }
+    .real-img-2 { background-image: url("realisation-installation-appartement.webp"); }
+    .real-img-3 { background-image: url("realisation-eclairage-interieur.webp"); }
+    .real-img-4 { background-image: url("realisation-borne-recharge.webp"); }
+
+    .floating-icon {
+      position: absolute;
+      top: 218px;
+      right: 26px;
+      width: 56px;
+      height: 56px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #FF9840, var(--sx-orange-deep));
+      color: #fff;
+      box-shadow: 0 12px 26px var(--sx-orange-glow);
+      z-index: 2;
+    }
+
+    .floating-icon svg {
+      width: 26px; height: 26px;
+      fill: none; stroke: currentColor; stroke-width: 1.9;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    .realisation-content { padding: 28px 28px 30px; }
+
+    .project-tag {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: var(--sx-orange-soft);
+      color: var(--sx-orange-deep);
+      font-family: var(--font-display);
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .realisation-content h3 { font-size: 21px; font-weight: 700; margin-bottom: 10px; }
+    .realisation-content p { font-size: 14.5px; line-height: 1.62; color: var(--sx-muted); }
+
+    .project-meta {
+      margin-top: 18px;
+      display: flex;
+      gap: 22px;
+    }
+
+    .project-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 13px;
+      color: var(--sx-muted);
+      font-weight: 500;
+    }
+
+    .project-meta svg {
+      width: 16px; height: 16px;
+      fill: none; stroke: var(--sx-orange-deep); stroke-width: 1.9;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    /* ── CTA bande noire ── */
+    .project-cta {
+      position: relative;
+      overflow: hidden;
+      margin-top: 56px;
+      padding: 40px 44px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+      border-radius: 22px;
+      background: var(--sx-black);
+      box-shadow: 0 26px 60px rgba(12, 13, 15, 0.28);
+    }
+
+    .project-cta::before {
+      content: "";
+      position: absolute;
+      top: -120px;
+      right: -60px;
+      width: 340px;
+      height: 340px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(245, 130, 32, 0.28), transparent 68%);
+      pointer-events: none;
+    }
+
+    .cta-left { display: flex; align-items: center; gap: 20px; }
+
+    .cta-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(245, 130, 32, 0.15);
+      color: var(--sx-orange);
+      border: 1px solid rgba(245, 130, 32, 0.3);
+    }
+
+    .cta-icon svg {
+      width: 26px; height: 26px;
+      fill: none; stroke: currentColor; stroke-width: 1.9;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    .cta-left h3 { color: #fff; font-size: 21px; font-weight: 700; margin-bottom: 6px; }
+    .cta-left p { color: rgba(255, 255, 255, 0.6); font-size: 14.5px; }
+
+    .cta-benefits { display: flex; flex-direction: column; gap: 9px; }
+
+    .cta-benefits span {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 13.5px;
+      font-weight: 500;
+    }
+
+    .cta-benefits svg {
+      width: 17px; height: 17px;
+      fill: none; stroke: var(--sx-orange); stroke-width: 2;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    .cta-button {
+      position: relative;
+      z-index: 1;
+      height: 56px;
+      padding: 0 30px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #FF9840 0%, var(--sx-orange) 45%, var(--sx-orange-deep) 100%);
+      color: #fff;
+      text-decoration: none;
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 700;
+      box-shadow: 0 16px 32px rgba(245, 130, 32, 0.4);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .cta-button:hover { transform: translateY(-2px); box-shadow: 0 20px 42px rgba(245, 130, 32, 0.5); }
+
+    .cta-button svg {
+      width: 20px; height: 20px;
+      fill: none; stroke: currentColor; stroke-width: 1.9;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       AVIS GOOGLE
+    ═══════════════════════════════════════════════════ */
+    .avis-section {
+      background: var(--sx-bg);
+      padding: 110px 24px;
+    }
+
+    .avis-container { width: min(1240px, 100%); margin: 0 auto; }
+
+    .avis-header { text-align: center; margin-bottom: 60px; }
+    .avis-header h2 { font-size: clamp(32px, 4vw, 48px); font-weight: 700; margin: 14px 0; }
+    .avis-header p { font-size: 17px; color: var(--sx-muted); max-width: 560px; margin: 0 auto; }
+
+    .avis-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.25fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .avis-score-row { display: flex; align-items: center; gap: 20px; }
+
+    .avis-score-big {
+      font-family: var(--font-display);
+      font-size: 78px;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--sx-ink);
+      letter-spacing: -0.04em;
+    }
+
+    .avis-score-stars { color: var(--sx-orange); font-size: 22px; letter-spacing: 0.08em; }
+    .avis-score-label { color: var(--sx-muted); font-size: 13.5px; margin-top: 5px; }
+
+    .avis-sep {
+      width: 60px;
+      height: 3px;
+      border-radius: 3px;
+      background: var(--sx-orange);
+      margin: 28px 0;
+    }
+
+    .avis-headline { font-size: 29px; font-weight: 700; line-height: 1.2; }
+    .avis-sub { margin-top: 14px; color: var(--sx-muted); font-size: 15.5px; line-height: 1.6; max-width: 400px; }
+
+    .avis-dots { display: flex; gap: 9px; margin-top: 28px; }
+
+    .avis-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      border: none;
+      background: rgba(12, 13, 15, 0.14);
+      cursor: pointer;
+      padding: 0;
+      transition: background 0.25s, width 0.25s;
+    }
+
+    .avis-dot.active { width: 30px; background: var(--sx-orange); }
+
+    .avis-badge {
+      margin-top: 30px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 11px 20px;
+      border-radius: 999px;
+      border: 1px solid var(--sx-border);
+      background: #fff;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--sx-text);
+    }
+
+    .avis-badge-g { width: 19px; height: 19px; }
+
+    .avis-right {
+      position: relative;
+      min-height: 350px;
+    }
+
+    /* Effet pile de cartes derrière la carte active */
+    .avis-right::before,
+    .avis-right::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 22px;
+      background: #fff;
+      border: 1px solid var(--sx-border);
+      box-shadow: 0 14px 34px rgba(12, 13, 15, 0.06);
+      pointer-events: none;
+    }
+
+    .avis-right::before { transform: rotate(-2.6deg) translate(-12px, 16px); opacity: 0.55; }
+    .avis-right::after { transform: rotate(1.9deg) translate(14px, 9px); opacity: 0.75; }
+
+    .avis-deco {
+      position: absolute;
+      border-radius: 24px;
+      pointer-events: none;
+    }
+
+    .avis-deco-tl {
+      top: -32px;
+      left: -32px;
+      width: 132px;
+      height: 112px;
+      background:
+        radial-gradient(circle at 2px 2px, rgba(245, 130, 32, 0.55) 2.2px, transparent 0);
+      background-size: 17px 17px;
+      opacity: 0.7;
+      z-index: 0;
+    }
+
+    .avis-deco-br {
+      bottom: -52px;
+      right: -46px;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(245, 130, 32, 0.30), transparent 65%);
+      z-index: 0;
+    }
+
+    .avis-deco-quote {
+      top: -46px;
+      right: 20px;
+      font-family: Georgia, serif;
+      font-size: 150px;
+      line-height: 1;
+      font-weight: 700;
+      color: rgba(245, 130, 32, 0.22);
+      z-index: 2;
+    }
+
+    .avis-card {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 44px 48px;
+      background: var(--sx-card);
+      border: 1px solid var(--sx-border);
+      border-radius: 22px;
+      box-shadow: 0 28px 60px rgba(12, 13, 15, 0.12), 0 3px 12px rgba(12, 13, 15, 0.05);
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(16px) scale(0.985);
+      pointer-events: none;
+      transition: opacity 0.55s ease, transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .avis-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #FF9840, var(--sx-orange-deep));
+    }
+
+    .avis-card.active {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: auto;
+    }
+
+    .avis-card-stars { color: var(--sx-orange); font-size: 19px; letter-spacing: 0.1em; margin-bottom: 18px; }
+
+    .avis-card-quote {
+      font-size: 17px;
+      line-height: 1.68;
+      color: var(--sx-text);
+    }
+
+    .avis-card-line {
+      width: 44px;
+      height: 3px;
+      border-radius: 3px;
+      background: var(--sx-orange);
+      margin: 22px 0 20px;
+    }
+
+    .avis-card-author { display: flex; align-items: center; gap: 13px; }
+
+    .avis-card-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--sx-black);
+      color: var(--sx-orange);
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 17px;
+    }
+
+    .avis-card-author strong { display: block; font-size: 15px; color: var(--sx-ink); }
+    .avis-card-author span { font-size: 12.5px; color: var(--sx-muted); }
+
+    /* ═══════════════════════════════════════════════════
+       ZONE D'INTERVENTION
+    ═══════════════════════════════════════════════════ */
+    .zone-section {
+      background: linear-gradient(180deg, var(--sx-bg) 0%, #F4F1EB 100%);
+      padding: 110px 24px;
+    }
+
+    .zone-container {
+      width: min(1240px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .zone-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--sx-orange-deep);
+    }
+
+    .zone-kicker svg {
+      width: 17px; height: 17px;
+      fill: none; stroke: currentColor; stroke-width: 2;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    .zone-content h2 {
+      font-size: clamp(32px, 4vw, 46px);
+      font-weight: 700;
+      line-height: 1.08;
+      margin: 16px 0 18px;
+    }
+
+    .zone-content h2 em { font-style: normal; color: var(--sx-orange); }
+
+    .zone-intro { font-size: 16.5px; line-height: 1.65; color: var(--sx-muted); max-width: 520px; }
+
+    .zone-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .zone-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: 1px solid var(--sx-border);
+      background: #fff;
+      color: var(--sx-text);
+      font-size: 13.5px;
+      font-weight: 500;
+      transition: border-color 0.25s, color 0.25s, transform 0.25s;
+    }
+
+    .zone-tag:hover { border-color: var(--sx-orange); color: var(--sx-orange-deep); transform: translateY(-2px); }
+
+    .zone-tag svg {
+      width: 15px; height: 15px;
+      fill: none; stroke: var(--sx-orange-deep); stroke-width: 2;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    .zone-tag.highlight {
+      background: var(--sx-black);
+      border-color: var(--sx-black);
+      color: #fff;
+    }
+
+    .zone-tag.highlight svg { stroke: var(--sx-orange); }
+
+    .zone-cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+
+    .zone-visual { display: flex; flex-direction: column; gap: 18px; }
+
+    .zone-stat-card {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 24px 26px;
+      background: var(--sx-card);
+      border: 1px solid var(--sx-border);
+      border-radius: var(--sx-radius);
+      box-shadow: 0 4px 16px rgba(12, 13, 15, 0.04);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .zone-stat-card:hover { transform: translateY(-4px); box-shadow: 0 16px 34px rgba(12, 13, 15, 0.1); }
+
+    .zone-stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+
+    .zone-stat-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 14px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--sx-orange-soft);
+      color: var(--sx-orange-deep);
+    }
+
+    .zone-stat-icon svg {
+      width: 24px; height: 24px;
+      fill: none; stroke: currentColor; stroke-width: 1.9;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    .zone-stat-card strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--sx-ink);
+      letter-spacing: -0.02em;
+      margin-bottom: 4px;
+    }
+
+    .zone-stat-card span { font-size: 13px; line-height: 1.5; color: var(--sx-muted); }
+
+    /* ═══════════════════════════════════════════════════
+       CONTACT
+    ═══════════════════════════════════════════════════ */
+    .contact-section {
+      position: relative;
+      background: var(--sx-black);
+      padding: 120px 24px;
+      overflow: hidden;
+    }
+
+    .contact-section::before {
+      content: "";
+      position: absolute;
+      top: -180px;
+      left: -120px;
+      width: 520px;
+      height: 520px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(245, 130, 32, 0.16), transparent 66%);
+      pointer-events: none;
+    }
+
+    .contact-section::after {
+      content: "";
+      position: absolute;
+      bottom: -200px;
+      right: -140px;
+      width: 560px;
+      height: 560px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(245, 130, 32, 0.10), transparent 66%);
+      pointer-events: none;
+    }
+
+    .contact-container {
+      position: relative;
+      z-index: 1;
+      width: min(1240px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .contact-left .section-kicker { color: var(--sx-orange); }
+    .contact-left .section-kicker::before { background: var(--sx-orange); }
+
+    .contact-left h2 {
+      color: #fff;
+      font-size: clamp(34px, 4.4vw, 52px);
+      font-weight: 800;
+      line-height: 1.04;
+      margin: 18px 0 18px;
+      letter-spacing: -0.03em;
+    }
+
+    .contact-intro { color: rgba(255, 255, 255, 0.6); font-size: 16.5px; line-height: 1.6; max-width: 440px; }
+
+    .contact-benefits { display: flex; flex-direction: column; gap: 14px; margin-top: 36px; }
+
+    .benefit-card {
+      display: flex;
+      gap: 16px;
+      padding: 20px 22px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.045);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      transition: background 0.3s, border-color 0.3s;
+    }
+
+    .benefit-card:hover {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: rgba(245, 130, 32, 0.4);
+    }
+
+    .benefit-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 13px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(245, 130, 32, 0.14);
+      color: var(--sx-orange);
+      border: 1px solid rgba(245, 130, 32, 0.28);
+    }
+
+    .benefit-icon svg {
+      width: 21px; height: 21px;
+      fill: none; stroke: currentColor; stroke-width: 1.9;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    .benefit-card h3 { color: #fff; font-size: 16px; font-weight: 700; margin-bottom: 5px; }
+    .benefit-card p { color: rgba(255, 255, 255, 0.55); font-size: 13.5px; line-height: 1.55; }
+
+    .emergency-box {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+      padding: 22px 24px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, rgba(245, 130, 32, 0.16), rgba(245, 130, 32, 0.06));
+      border: 1px solid rgba(245, 130, 32, 0.35);
+    }
+
+    .emergency-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--sx-orange);
+      color: #fff;
+      box-shadow: 0 10px 24px rgba(245, 130, 32, 0.4);
+      animation: emergency-pulse 2.4s ease-in-out infinite;
+    }
+
+    @keyframes emergency-pulse {
+      0%, 100% { box-shadow: 0 10px 24px rgba(245, 130, 32, 0.4); }
+      50% { box-shadow: 0 10px 34px rgba(245, 130, 32, 0.7); }
+    }
+
+    .emergency-icon svg {
+      width: 22px; height: 22px;
+      fill: none; stroke: currentColor; stroke-width: 1.9;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    .emergency-copy { flex: 1; min-width: 170px; }
+    .emergency-copy strong { display: block; color: #fff; font-size: 16px; margin-bottom: 4px; font-family: var(--font-display); }
+    .emergency-copy span { color: rgba(255, 255, 255, 0.6); font-size: 13px; }
+
+    .emergency-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 22px;
+      border-radius: 999px;
+      background: #fff;
+      color: var(--sx-black);
+      text-decoration: none;
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 700;
+      transition: transform 0.25s, background 0.25s, color 0.25s;
+    }
+
+    .emergency-phone:hover { transform: translateY(-2px); background: var(--sx-orange); color: #fff; }
+
+    .emergency-phone svg {
+      width: 18px; height: 18px;
+      fill: none; stroke: currentColor; stroke-width: 2;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    /* ── Carte formulaire ── */
+    .contact-card {
+      background: var(--sx-card);
+      border-radius: 24px;
+      padding: 40px 40px 36px;
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.4);
+    }
+
+    .form-heading h3 { font-size: 24px; font-weight: 700; margin-bottom: 7px; }
+    .form-heading p { color: var(--sx-muted); font-size: 14.5px; }
+
+    .contact-form { margin-top: 26px; display: flex; flex-direction: column; gap: 18px; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+
+    .contact-form label { display: flex; flex-direction: column; gap: 8px; }
+
+    .contact-form label span {
+      font-family: var(--font-display);
+      font-size: 12.5px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--sx-ink);
+    }
+
+    .contact-form label span em { color: var(--sx-orange-deep); font-style: normal; }
+
+    /* Consentement RGPD du formulaire */
+    .contact-form .consent-row {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .contact-form .consent-row input[type="checkbox"] {
+      width: 17px;
+      height: 17px;
+      margin-top: 2px;
+      flex-shrink: 0;
+      accent-color: var(--sx-orange);
+    }
+
+    .contact-form .consent-row span {
+      font-family: var(--font-body);
+      font-size: 12.5px;
+      font-weight: 400;
+      letter-spacing: 0;
+      text-transform: none;
+      line-height: 1.55;
+      color: var(--sx-muted);
+    }
+
+    .contact-form .consent-row a { color: var(--sx-orange-deep); }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+      font-family: var(--font-body);
+      font-size: 14.5px;
+      color: var(--sx-ink);
+      padding: 14px 16px;
+      border-radius: 12px;
+      border: 1.5px solid var(--sx-border);
+      background: var(--sx-bg);
+      outline: none;
+      transition: border-color 0.25s, box-shadow 0.25s;
+      width: 100%;
+    }
+
+    .contact-form input:focus,
+    .contact-form select:focus,
+    .contact-form textarea:focus {
+      border-color: var(--sx-orange);
+      box-shadow: 0 0 0 4px rgba(245, 130, 32, 0.14);
+    }
+
+    .contact-form textarea { min-height: 110px; resize: vertical; }
+
+    .contact-form button {
+      margin-top: 6px;
+      height: 56px;
+      border: none;
+      border-radius: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      cursor: pointer;
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+      background: linear-gradient(135deg, #FF9840 0%, var(--sx-orange) 45%, var(--sx-orange-deep) 100%);
+      box-shadow: 0 16px 32px var(--sx-orange-glow);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .contact-form button:hover { transform: translateY(-2px); box-shadow: 0 20px 42px var(--sx-orange-glow); }
+
+    .contact-form button svg {
+      width: 20px; height: 20px;
+      fill: none; stroke: currentColor; stroke-width: 1.9;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    .contact-divider { height: 1px; background: var(--sx-border); margin: 30px 0 26px; }
+
+    .coords h3 { font-size: 17px; font-weight: 700; margin-bottom: 18px; }
+
+    .coords-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+
+    .coord-item { display: flex; gap: 13px; }
+
+    .coord-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--sx-orange-soft);
+      color: var(--sx-orange-deep);
+    }
+
+    .coord-icon svg {
+      width: 19px; height: 19px;
+      fill: none; stroke: currentColor; stroke-width: 1.9;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    .coord-item strong { display: block; font-size: 13.5px; color: var(--sx-ink); font-family: var(--font-display); font-weight: 700; margin-bottom: 4px; }
+    .coord-item span { font-size: 13px; line-height: 1.55; color: var(--sx-muted); }
+    .coord-item a { color: inherit; text-decoration: none; }
+    .coord-item a:hover { color: var(--sx-orange-deep); }
+
+    .contact-map { margin-top: 26px; }
+    .contact-map iframe { border: 0; border-radius: 14px; display: block; width: 100%; height: 220px; filter: saturate(0.9); }
+
+    /* Facade de consentement Google Maps (RGPD / Loi 25) */
+    .map-consent-box {
+      min-height: 220px;
+      border-radius: 14px;
+      border: 1px dashed rgba(12, 13, 15, 0.18);
+      background: #F4F1EB;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .map-consent-box p {
+      color: var(--sx-muted);
+      font-size: 13px;
+      line-height: 1.55;
+      max-width: 420px;
+    }
+
+    .map-consent-box p a { color: var(--sx-orange-deep); }
+
+    .map-consent-box button {
+      height: 44px;
+      padding: 0 22px;
+      border: none;
+      border-radius: 999px;
+      background: var(--sx-orange);
+      color: #fff;
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.25s, transform 0.25s;
+    }
+
+    .map-consent-box button:hover { background: var(--sx-orange-deep); transform: translateY(-1px); }
+
+    /* ═══════════════════════════════════════════════════
+       FOOTER
+    ═══════════════════════════════════════════════════ */
+    .site-footer {
+      background: #08090A;
+      padding: 80px 24px 0;
+    }
+
+    .footer-main {
+      width: min(1240px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+      gap: 48px;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      text-decoration: none;
+    }
+
+    .footer-logo-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 15px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      flex-shrink: 0;
+    }
+
+    .footer-logo-img img {
+      width: 130%;
+      height: 130%;
+      object-fit: cover;
+      object-position: center 38%;
+      margin: -9px;
+    }
+
+    .footer-logo-text strong {
+      display: block;
+      font-family: var(--font-display);
+      color: #fff;
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    .footer-logo-text span {
+      color: var(--sx-orange);
+      font-size: 10.5px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .footer-tagline {
+      margin-top: 20px;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 14px;
+      line-height: 1.65;
+      max-width: 320px;
+    }
+
+    .footer-socials { display: flex; gap: 10px; margin-top: 22px; }
+
+    .footer-social-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.7);
+      transition: background 0.25s, color 0.25s, transform 0.25s, border-color 0.25s;
+    }
+
+    .footer-social-btn:hover {
+      background: var(--sx-orange);
+      border-color: var(--sx-orange);
+      color: #fff;
+      transform: translateY(-3px);
+    }
+
+    .footer-social-btn svg {
+      width: 19px; height: 19px;
+      fill: none; stroke: currentColor; stroke-width: 1.9;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    .footer-col h4 {
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+
+    .footer-col ul a {
+      color: rgba(255, 255, 255, 0.55);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s, padding-left 0.2s;
+    }
+
+    .footer-col ul a:hover { color: var(--sx-orange); padding-left: 5px; }
+
+    .footer-contact-item { display: flex; gap: 13px; margin-bottom: 20px; }
+
+    .footer-contact-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 11px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(245, 130, 32, 0.12);
+      color: var(--sx-orange);
+      border: 1px solid rgba(245, 130, 32, 0.25);
+    }
+
+    .footer-contact-icon svg {
+      width: 18px; height: 18px;
+      fill: none; stroke: currentColor; stroke-width: 1.9;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    .footer-contact-item strong { display: block; color: #fff; font-size: 13.5px; font-family: var(--font-display); font-weight: 700; margin-bottom: 4px; }
+    .footer-contact-item span { color: rgba(255, 255, 255, 0.5); font-size: 13px; line-height: 1.55; }
+    .footer-contact-item a { color: inherit; text-decoration: none; }
+    .footer-contact-item a:hover { color: var(--sx-orange); }
+
+    .footer-emergency {
+      margin-top: 6px;
+      padding: 18px 20px;
+      border-radius: 15px;
+      background: linear-gradient(135deg, rgba(245, 130, 32, 0.14), rgba(245, 130, 32, 0.05));
+      border: 1px solid rgba(245, 130, 32, 0.3);
+    }
+
+    .footer-emergency > span {
+      display: block;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 12.5px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 9px;
+    }
+
+    .footer-emergency a {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--sx-orange);
+      text-decoration: none;
+      font-family: var(--font-display);
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .footer-emergency a svg {
+      width: 18px; height: 18px;
+      fill: none; stroke: currentColor; stroke-width: 2;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    .footer-sep {
+      width: min(1240px, 100%);
+      margin: 56px auto 0;
+      border: none;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .footer-bottom {
+      width: min(1240px, 100%);
+      margin: 0 auto;
+      padding: 26px 0 30px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .footer-bottom p { color: rgba(255, 255, 255, 0.4); font-size: 13px; }
+    .footer-bottom p a { color: rgba(255, 255, 255, 0.55); text-decoration: none; }
+    .footer-bottom p a:hover { color: var(--sx-orange); }
+
+    .footer-badges { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .footer-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 15px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.65);
+      font-size: 12.5px;
+      font-weight: 500;
+    }
+
+    .footer-badge svg {
+      width: 15px; height: 15px;
+      fill: none; stroke: var(--sx-orange); stroke-width: 2;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       BARRE D'APPEL FLOTTANTE (mobile)
+    ═══════════════════════════════════════════════════ */
+    .float-call-bar {
+      position: fixed;
+      left: 16px;
+      right: 16px;
+      bottom: 16px;
+      z-index: 50;
+      display: none;
+      gap: 10px;
+    }
+
+    .float-call-btn {
+      flex: 1;
+      height: 56px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #FF9840 0%, var(--sx-orange) 45%, var(--sx-orange-deep) 100%);
+      color: #fff;
+      text-decoration: none;
+      font-family: var(--font-display);
+      font-size: 14.5px;
+      font-weight: 700;
+      box-shadow: 0 14px 32px rgba(245, 130, 32, 0.45);
+    }
+
+    .float-call-btn svg {
+      width: 19px; height: 19px;
+      fill: none; stroke: currentColor; stroke-width: 2;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    .float-wa-btn {
+      width: 56px;
+      height: 56px;
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      background: #25D366;
+      box-shadow: 0 14px 32px rgba(37, 211, 102, 0.4);
+    }
+
+    .float-wa-btn svg { width: 27px; height: 27px; }
+
+    /* ═══════════════════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════════════════ */
+    @media (max-width: 1100px) {
+      .main-nav { display: none; }
+      .burger { display: flex; }
+      .header-phone-btn span { display: none; }
+      .header-phone-btn { padding: 0 15px; }
+
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .why-grid { grid-template-columns: 1fr; gap: 70px; }
+      .review-card { left: 12px; right: 12px; width: auto; bottom: -30px; }
+      .avis-grid { grid-template-columns: 1fr; gap: 44px; }
+      .avis-right { min-height: 400px; }
+      .zone-container { grid-template-columns: 1fr; gap: 54px; }
+      .contact-container { grid-template-columns: 1fr; gap: 60px; }
+      .footer-main { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 720px) {
+      .site-header { top: 12px; width: calc(100% - 24px); height: 66px; padding: 0 10px; }
+      .brand-copy small { display: none; }
+      .brand-logo { width: 44px; height: 44px; }
+
+      .hero { padding-top: 120px; padding-bottom: 80px; }
+      .hero-trust-bar {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-top: 48px;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 22px 24px;
+      }
+      .hero-content .hero-trust-bar { margin-left: 0; }
+      .trust-bar-sep { display: none; }
+
+      .services-section, .why-section, .realisations-section,
+      .avis-section, .zone-section { padding: 80px 20px; }
+      .contact-section { padding: 90px 20px; }
+
+      .services-grid { grid-template-columns: 1fr; }
+      .realisations-grid { grid-template-columns: 1fr; }
+
+      .project-cta { padding: 32px 26px; }
+      .cta-left { flex-direction: column; align-items: flex-start; }
+
+      .why-photo { height: 380px; }
+      .why-visual::before, .why-dots { display: none; }
+      .review-card {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: auto;
+        margin: -54px 12px 0;
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+      .review-sep { display: none; }
+      .avis-deco-quote { font-size: 96px; top: -28px; right: 8px; }
+      .avis-right::before { transform: rotate(-2deg) translate(-6px, 12px); }
+      .avis-right::after { transform: rotate(1.5deg) translate(7px, 7px); }
+
+      .avis-card { padding: 32px 26px; }
+      .avis-right { min-height: 460px; }
+      .avis-score-big { font-size: 60px; }
+
+      .zone-stat-row { grid-template-columns: 1fr; }
+
+      .contact-card { padding: 30px 24px; }
+      .form-row { grid-template-columns: 1fr; }
+      .coords-grid { grid-template-columns: 1fr; }
+
+      .footer-main { grid-template-columns: 1fr; gap: 40px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+
+      .float-call-bar { display: flex; }
+      .site-footer { padding-bottom: 84px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════
+     HEADER
+  ═══════════════════════════════════════════════════ -->
+  <header class="site-header" id="siteHeader">
+    <a href="#accueil" class="brand" aria-label="SAMOX Electrique — home">
+      <span class="brand-logo">
+        <img src="logo-samox-320.png" alt="Logo SAMOX Electrique" />
+      </span>
+      <span class="brand-copy">
+        <strong>SAMOX</strong>
+        <small>Electrique · Québec</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#accueil" class="active">Home</a>
+      <a href="#services">Services</a>
+      <a href="#pourquoi">Why SAMOX</a>
+      <a href="#realisations">Our Work</a>
+      <a href="#zone">Service Area</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="tel:+15146620703" class="header-phone-btn">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 19 19.5 19.5 0 0 1 5 12.81 19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.62 2.6a2 2 0 0 1-.45 2.11L8 9.65a16 16 0 0 0 6.35 6.35l1.22-1.22a2 2 0 0 1 2.11-.45c.83.29 1.7.5 2.6.62A2 2 0 0 1 22 16.92Z" />
+      </svg>
+      <span>514&nbsp;662-0703</span>
+    </a>
+
+    <a href="index.html" class="lang-switch" lang="fr" hreflang="fr" aria-label="Version française">FR</a>
+
+    <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Menu mobile -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#accueil">Home</a>
+    <a href="#services">Services</a>
+    <a href="#pourquoi">Why SAMOX</a>
+    <a href="#realisations">Our Work</a>
+    <a href="#zone">Service Area</a>
+    <a href="#contact">Contact</a>
+    <a href="tel:+15146620703" class="mobile-menu-phone">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 19 19.5 19.5 0 0 1 5 12.81 19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.62 2.6a2 2 0 0 1-.45 2.11L8 9.65a16 16 0 0 0 6.35 6.35l1.22-1.22a2 2 0 0 1 2.11-.45c.83.29 1.7.5 2.6.62A2 2 0 0 1 22 16.92Z" />
+      </svg>
+      +1 514 662-0703
+    </a>
+    <a href="index.html" class="mobile-menu-lang" lang="fr" hreflang="fr">Version française — FR</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════
+     HERO
+  ═══════════════════════════════════════════════════ -->
+  <section class="hero" id="accueil">
+    <div class="hero-bg"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="pulse-dot"></span>
+        Open 7 days a week · 7 AM–9 PM
+      </div>
+
+      <h1>
+        Electrician in<br />
+        <em>Saint&#8209;Laurent</em>,<br />
+        Montreal.
+      </h1>
+
+      <p class="hero-sub">
+        Repairs, installation, code compliance. We show up fast, work clean,
+        and the quote is free.
+      </p>
+
+      <div class="hero-actions">
+        <a href="tel:+15146620703" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 19 19.5 19.5 0 0 1 5 12.81 19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.62 2.6a2 2 0 0 1-.45 2.11L8 9.65a16 16 0 0 0 6.35 6.35l1.22-1.22a2 2 0 0 1 2.11-.45c.83.29 1.7.5 2.6.62A2 2 0 0 1 22 16.92Z" />
+          </svg>
+          Call now
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          Free quote
+        </a>
+      </div>
+
+      <!-- Badge Google -->
+      <div class="google-badge">
+        <svg class="google-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#4285F4"
+            d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+          <path fill="#34A853"
+            d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+          <path fill="#FBBC05"
+            d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+          <path fill="#EA4335"
+            d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+        </svg>
+        <span class="google-badge-label">Google Reviews</span>
+        <span class="google-stars">★★★★★</span>
+        <span class="google-score">5.0/5</span>
+      </div>
+    </div>
+
+    <!-- Barre de confiance -->
+    <div class="hero-trust-bar">
+      <div class="trust-bar-item">
+        <div class="trust-bar-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" />
+          </svg>
+        </div>
+        <div class="trust-bar-text">
+          <strong>Fast response</strong>
+          <span>Express service, 7 days a week</span>
+        </div>
+      </div>
+
+      <div class="trust-bar-sep"></div>
+
+      <div class="trust-bar-item">
+        <div class="trust-bar-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+        </div>
+        <div class="trust-bar-text">
+          <strong>Saint-Laurent &amp; Greater Montreal</strong>
+          <span>Quick dispatch to your area</span>
+        </div>
+      </div>
+
+      <div class="trust-bar-sep"></div>
+
+      <div class="trust-bar-item">
+        <div class="trust-bar-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6" />
+            <path d="M9 15h6" />
+            <path d="M9 18h4" />
+          </svg>
+        </div>
+        <div class="trust-bar-text">
+          <strong>Free quote</strong>
+          <span>Clear, transparent and no obligation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+     SERVICES
+  ═══════════════════════════════════════════════════ -->
+  <section class="services-section" id="services">
+    <div class="services-container">
+
+      <div class="services-heading reveal">
+        <span class="section-kicker kicker-center">Our services</span>
+        <h2>What we do</h2>
+        <p>Repairs, installation, code compliance, renovation. We handle it all.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Dépannage -->
+        <article class="service-card reveal reveal-delay-1">
+          <div class="service-image-wrap"><div class="service-image depannage" role="img" aria-label="Electrical repairs"></div></div>
+          <div class="service-content">
+            <div class="service-icon-inline">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" />
+              </svg>
+            </div>
+            <h3>Electrical repairs</h3>
+            <p>Power outage, tripping breaker, short circuit. Fast response to make your
+              installation safe again.</p>
+            <a href="#contact" class="service-cta">
+              Learn more
+              <span class="service-cta-arrow">→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Installation -->
+        <article class="service-card reveal reveal-delay-2">
+          <div class="service-image-wrap"><div class="service-image installation" role="img" aria-label="Electrical installation"></div></div>
+          <div class="service-content">
+            <div class="service-icon-inline">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="2" y="7" width="4" height="14" rx="1" />
+                <path d="M6 7h10l2 3-2 3H6" />
+                <path d="M18 10h2a2 2 0 1 1 0 4h-2" />
+              </svg>
+            </div>
+            <h3>Electrical installation</h3>
+            <p>New circuits, outlets and switches, electrical panels. Residential and
+              commercial.</p>
+            <a href="#contact" class="service-cta">
+              Learn more
+              <span class="service-cta-arrow">→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Mise aux normes -->
+        <article class="service-card reveal reveal-delay-3">
+          <div class="service-image-wrap"><div class="service-image normes" role="img" aria-label="Code compliance"></div></div>
+          <div class="service-content">
+            <div class="service-icon-inline">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                <path d="m9 12 2 2 4-5" />
+              </svg>
+            </div>
+            <h3>Code compliance</h3>
+            <p>Bringing your installation up to the Quebec Electrical Code. Diagnosis and
+              detailed report.</p>
+            <a href="#contact" class="service-cta">
+              Learn more
+              <span class="service-cta-arrow">→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Rénovation -->
+        <article class="service-card reveal reveal-delay-4">
+          <div class="service-image-wrap"><div class="service-image renovation" role="img" aria-label="Electrical renovation"></div></div>
+          <div class="service-content">
+            <div class="service-icon-inline">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 21h18" />
+                <path d="M5 21V8l7-5 7 5v13" />
+                <path d="M9 21v-6h6v6" />
+              </svg>
+            </div>
+            <h3>Electrical renovation</h3>
+            <p>Full or partial renovation of your electrical system. Condos, houses, commercial
+              spaces.</p>
+            <a href="#contact" class="service-cta">
+              Learn more
+              <span class="service-cta-arrow">→</span>
+            </a>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+     POURQUOI SAMOX
+  ═══════════════════════════════════════════════════ -->
+  <section class="why-section" id="pourquoi">
+    <div class="why-container">
+
+      <div class="why-header reveal">
+        <span class="section-kicker kicker-center">Why SAMOX</span>
+        <h2>Why SAMOX&nbsp;Electrique?</h2>
+        <p>Simple: we show up fast, we do the job right, and there are no surprises on the bill.</p>
+      </div>
+
+      <div class="why-grid">
+
+        <div class="why-content">
+          <div class="why-cards">
+
+            <div class="why-card reveal reveal-delay-1">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                </svg>
+              </div>
+              <div>
+                <h3>Responsiveness</h3>
+                <p>Emergency or not, we show up. Open 7 days a week, 7 AM to 9 PM, in Saint-Laurent and
+                  Greater Montreal.</p>
+              </div>
+            </div>
+
+            <div class="why-card reveal reveal-delay-2">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                  <path d="m9 12 2 2 4-5" />
+                </svg>
+              </div>
+              <div>
+                <h3>Expertise</h3>
+                <p>Years on the job. Every intervention complies with the Quebec Electrical Code.</p>
+              </div>
+            </div>
+
+            <div class="why-card reveal reveal-delay-3">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+                  <path d="M14 2v6h6" />
+                  <path d="M9 15h6" />
+                  <path d="M9 18h4" />
+                </svg>
+              </div>
+              <div>
+                <h3>Transparency</h3>
+                <p>A quote before any work begins. Never a surprise on the bill.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="why-visual reveal reveal-delay-2">
+          <div class="why-dots" aria-hidden="true"></div>
+          <div class="why-photo" role="img" aria-label="SAMOX electrician at work"></div>
+          <div class="photo-chip">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" />
+            </svg>
+            Guaranteed work
+          </div>
+
+          <div class="review-card">
+            <div class="review-google">
+              <div class="google-g-row">
+                <svg class="google-g-icon" viewBox="0 0 48 48" aria-hidden="true">
+                  <path fill="#4285F4"
+                    d="M47.5 24.6c0-1.6-.1-3.1-.4-4.6H24v8.7h13.2c-.6 3-2.3 5.5-4.9 7.2v6h7.9c4.6-4.3 7.3-10.6 7.3-17.3z" />
+                  <path fill="#34A853"
+                    d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.9-6c-2.1 1.4-4.8 2.3-8 2.3-6.1 0-11.3-4.1-13.2-9.7H2.5v6.2C6.5 42.6 14.7 48 24 48z" />
+                  <path fill="#FBBC05"
+                    d="M10.8 28.8c-.5-1.4-.7-2.9-.7-4.8s.2-3.4.7-4.8v-6.2H2.5C.9 16.4 0 20.1 0 24s.9 7.6 2.5 10.8l8.3-6z" />
+                  <path fill="#EA4335"
+                    d="M24 9.5c3.5 0 6.6 1.2 9 3.5l6.7-6.7C35.9 2.5 30.5 0 24 0 14.7 0 6.5 5.4 2.5 13.2l8.3 6.2C12.7 13.6 17.9 9.5 24 9.5z" />
+                </svg>
+                <div class="google-g-text">
+                  <strong>Google</strong>
+                  <span>Verified reviews</span>
+                </div>
+              </div>
+              <div class="review-score">5.0<span>/5</span></div>
+              <div class="review-stars">★★★★★</div>
+              <div class="review-google-base">Based on 55 reviews</div>
+            </div>
+
+            <div class="review-sep"></div>
+
+            <div class="testimonial">
+              <div class="quote-icon">"</div>
+              <p class="testimonial-text">Fast, meticulous work. The technician was professional and brought
+                everything up to code. I highly recommend SAMOX Electrique!</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">T</div>
+                <div>
+                  <strong>Thomas D.</strong>
+                  <span>Saint-Laurent · 2 weeks ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+     RÉALISATIONS
+  ═══════════════════════════════════════════════════ -->
+  <section class="realisations-section" id="realisations">
+    <div class="realisations-container">
+
+      <div class="realisations-heading reveal">
+        <span class="section-kicker kicker-center">Our work</span>
+        <h2>Our latest projects</h2>
+        <p>A few recent projects in Saint-Laurent and Greater Montreal.</p>
+      </div>
+
+      <div class="realisations-grid">
+
+        <!-- Mise aux normes -->
+        <article class="realisation-card reveal reveal-delay-1">
+          <div class="realisation-image-wrap"><div class="realisation-image real-img-1" role="img" aria-label="Electrical panel brought up to code"></div></div>
+          <div class="floating-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" />
+            </svg>
+          </div>
+          <div class="realisation-content">
+            <span class="project-tag">Code compliance</span>
+            <h3>Electrical panel brought up to code</h3>
+            <p>Complete code-compliance upgrade of a condo's electrical panel, including breaker replacement.</p>
+            <div class="project-meta">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Saint-Laurent
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3 21h18" />
+                  <path d="M5 21V7h10v14" />
+                  <path d="M15 10h4v11" />
+                  <path d="M8 10h2" />
+                  <path d="M8 14h2" />
+                  <path d="M8 18h2" />
+                </svg>
+                Condo
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Installation -->
+        <article class="realisation-card reveal reveal-delay-2">
+          <div class="realisation-image-wrap"><div class="realisation-image real-img-2" role="img" aria-label="Complete apartment electrical installation"></div></div>
+          <div class="floating-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 20h16" />
+              <path d="M6 20V9l6-5 6 5v11" />
+              <path d="M9 20v-6h6v6" />
+            </svg>
+          </div>
+          <div class="realisation-content">
+            <span class="project-tag">Installation</span>
+            <h3>Complete apartment installation</h3>
+            <p>Full electrical installation in a renovated apartment: outlets, lighting, panel and dedicated
+              circuits.</p>
+            <div class="project-meta">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Montreal
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3 21h18" />
+                  <path d="M5 21V7h10v14" />
+                  <path d="M15 10h4v11" />
+                  <path d="M8 10h2" />
+                  <path d="M8 14h2" />
+                  <path d="M8 18h2" />
+                </svg>
+                Apartment
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Éclairage -->
+        <article class="realisation-card reveal reveal-delay-3">
+          <div class="realisation-image-wrap"><div class="realisation-image real-img-3" role="img" aria-label="Custom interior lighting"></div></div>
+          <div class="floating-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 18h6" />
+              <path d="M10 22h4" />
+              <path d="M12 2a7 7 0 0 0-4 12.74V17h8v-2.26A7 7 0 0 0 12 2Z" />
+            </svg>
+          </div>
+          <div class="realisation-content">
+            <span class="project-tag">Lighting</span>
+            <h3>Custom interior lighting</h3>
+            <p>Custom LED lighting installation for a beautiful, energy-efficient result.</p>
+            <div class="project-meta">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Saint-Laurent
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3 21h18" />
+                  <path d="M5 21V7h10v14" />
+                  <path d="M15 10h4v11" />
+                  <path d="M8 10h2" />
+                  <path d="M8 14h2" />
+                  <path d="M8 18h2" />
+                </svg>
+                Condo
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Borne de recharge -->
+        <article class="realisation-card reveal reveal-delay-4">
+          <div class="realisation-image-wrap"><div class="realisation-image real-img-4" role="img" aria-label="Electric vehicle charging station"></div></div>
+          <div class="floating-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 17h14l-1.5-5h-11L5 17Z" />
+              <path d="M7 17v3" />
+              <path d="M17 17v3" />
+              <circle cx="8" cy="20" r="1" />
+              <circle cx="16" cy="20" r="1" />
+              <path d="M9 7h6" />
+              <path d="M12 4v6" />
+            </svg>
+          </div>
+          <div class="realisation-content">
+            <span class="project-tag">EV chargers</span>
+            <h3>EV charger installation</h3>
+            <p>Installation of an electric-vehicle charging station with dedicated protection and commissioning.</p>
+            <div class="project-meta">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Laval
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3 21h18" />
+                  <path d="M5 21V9l7-5 7 5v12" />
+                  <path d="M9 21v-7h6v7" />
+                </svg>
+                House
+              </span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- CTA bande noire -->
+      <div class="project-cta reveal">
+        <div class="cta-left">
+          <div class="cta-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 5h6" />
+              <rect x="5" y="3" width="14" height="4" rx="1" />
+              <path d="M5 7v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7" />
+              <path d="M9 12h6" />
+              <path d="M9 16h4" />
+            </svg>
+          </div>
+          <div>
+            <h3>Have an electrical project?</h3>
+            <p>Contact us for a free, personalized quote.</p>
+          </div>
+        </div>
+        <div class="cta-benefits">
+          <span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m9 12 2 2 4-5" />
+              <circle cx="12" cy="12" r="10" />
+            </svg>
+            100% free quote
+          </span>
+          <span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m9 12 2 2 4-5" />
+              <circle cx="12" cy="12" r="10" />
+            </svg>
+            Fast response
+          </span>
+          <span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m9 12 2 2 4-5" />
+              <circle cx="12" cy="12" r="10" />
+            </svg>
+            Meticulous work
+          </span>
+        </div>
+        <a href="#contact" class="cta-button">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 19 19.5 19.5 0 0 1 5 12.81 19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.62 2.6a2 2 0 0 1-.45 2.11L8 9.65a16 16 0 0 0 6.35 6.35l1.22-1.22a2 2 0 0 1 2.11-.45c.83.29 1.7.5 2.6.62A2 2 0 0 1 22 16.92Z" />
+          </svg>
+          Request a quote
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+     AVIS GOOGLE
+  ═══════════════════════════════════════════════════ -->
+  <section class="avis-section" id="avis">
+    <div class="avis-container">
+
+      <div class="avis-header reveal">
+        <span class="section-kicker kicker-center">Our Google reviews</span>
+        <h2>What our clients say</h2>
+        <p>Genuine reviews. Trust is earned — it can't be invented.</p>
+      </div>
+
+      <div class="avis-grid">
+
+        <div class="avis-left reveal">
+          <div class="avis-score-row">
+            <div class="avis-score-big">5.0</div>
+            <div class="avis-score-detail">
+              <div class="avis-score-stars">★★★★★</div>
+              <div class="avis-score-label">Based on 55 Google reviews</div>
+            </div>
+          </div>
+          <div class="avis-sep"></div>
+          <h3 class="avis-headline">They trust us.<br>Why not you?</h3>
+          <p class="avis-sub">Fast response, careful work, transparent pricing — our clients say it better
+            than we do.</p>
+          <div class="avis-dots" id="avisDots"></div>
+          <div class="avis-badge">
+            <svg class="avis-badge-g" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path fill="#4285F4"
+                d="M44.5 20H24v8h11.7C34.2 33.6 29.7 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l5.7-5.7C34.5 5.1 29.5 3 24 3 12.4 3 3 12.4 3 24s9.4 21 21 21c10.9 0 20-7.9 20-21 0-1.4-.1-2.7-.5-4z" />
+              <path fill="#34A853"
+                d="M6.3 14.7l6.6 4.8C14.4 16 18.9 13 24 13c3.1 0 5.9 1.1 8.1 2.9l5.7-5.7C34.5 5.1 29.5 3 24 3 16.3 3 9.7 7.9 6.3 14.7z" />
+              <path fill="#FBBC05"
+                d="M24 45c5.5 0 10.5-2 14.2-5.4l-6.6-5.4C29.5 35.9 26.9 37 24 37c-5.7 0-10.2-3.4-11.7-8.1l-6.6 4.8C9.7 40.1 16.3 45 24 45z" />
+              <path fill="#EA4335"
+                d="M44.5 20H24v8h11.7c-.7 2.1-2 3.9-3.8 5.2l6.6 5.4C42.4 35.1 45 30 45 24c0-1.4-.1-2.7-.5-4z" />
+            </svg>
+            <span>Verified Google reviews</span>
+          </div>
+        </div>
+
+        <div class="avis-right reveal reveal-delay-2" id="avisCards">
+          <div class="avis-deco avis-deco-tl"></div>
+          <div class="avis-deco avis-deco-br"></div>
+          <div class="avis-deco avis-deco-quote" aria-hidden="true">”</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+     ZONE D'INTERVENTION
+  ═══════════════════════════════════════════════════ -->
+  <section class="zone-section" id="zone">
+    <div class="zone-container">
+
+      <div class="zone-content reveal">
+        <p class="zone-kicker">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          Service area
+        </p>
+        <h2>Based in <em>Saint&#8209;Laurent</em>,<br>serving Greater Montreal</h2>
+        <p class="zone-intro">Based at 730 Montpellier Boulevard in Saint-Laurent, we serve all of Montreal
+          and the surrounding areas. Quick dispatch, no hidden fees.</p>
+
+        <div class="zone-tags">
+          <span class="zone-tag highlight">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Saint-Laurent
+          </span>
+          <span class="zone-tag">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Montreal
+          </span>
+          <span class="zone-tag">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Laval
+          </span>
+          <span class="zone-tag">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Mont-Royal
+          </span>
+          <span class="zone-tag">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Ahuntsic-Cartierville
+          </span>
+          <span class="zone-tag">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Côte-des-Neiges
+          </span>
+          <span class="zone-tag">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Dorval
+          </span>
+          <span class="zone-tag">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Pointe-Claire
+          </span>
+          <span class="zone-tag">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Villeray
+          </span>
+        </div>
+
+        <div class="zone-cta-row">
+          <a href="tel:+15146620703" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 19 19.5 19.5 0 0 1 5 12.81 19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.62 2.6a2 2 0 0 1-.45 2.11L8 9.65a16 16 0 0 0 6.35 6.35l1.22-1.22a2 2 0 0 1 2.11-.45c.83.29 1.7.5 2.6.62A2 2 0 0 1 22 16.92Z" />
+            </svg>
+            Call now
+          </a>
+          <a href="#contact" class="btn btn-dark">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+              <path d="M14 2v6h6" />
+              <path d="M9 15h6" />
+            </svg>
+            Request a quote
+          </a>
+        </div>
+      </div>
+
+      <div class="zone-visual reveal reveal-delay-2">
+        <div class="zone-stat-card">
+          <div class="zone-stat-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v6l4 2" />
+            </svg>
+          </div>
+          <div>
+            <strong>7 AM – 9 PM</strong>
+            <span>Open every day, weekdays and weekends</span>
+          </div>
+        </div>
+        <div class="zone-stat-row">
+          <div class="zone-stat-card">
+            <div class="zone-stat-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <div>
+              <strong data-count="250" data-prefix="+">0</strong>
+              <span>Happy clients</span>
+            </div>
+          </div>
+          <div class="zone-stat-card">
+            <div class="zone-stat-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+            </div>
+            <div>
+              <strong>7 days</strong>
+              <span>a week</span>
+            </div>
+          </div>
+        </div>
+        <div class="zone-stat-card">
+          <div class="zone-stat-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+              <path d="m9 12 2 2 4-5" />
+            </svg>
+          </div>
+          <div>
+            <strong>Quebec standards</strong>
+            <span>All work complies with the Quebec Electrical Code</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+     CONTACT
+  ═══════════════════════════════════════════════════ -->
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+
+      <div class="contact-left reveal">
+        <span class="section-kicker">Contact us</span>
+
+        <h2>A project<br>or an emergency?</h2>
+
+        <p class="contact-intro">
+          We're here 7 days a week, 7 AM to 9 PM. Tell us what you need and we'll call you right back.
+        </p>
+
+        <div class="contact-benefits">
+
+          <article class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+              </svg>
+            </div>
+            <div>
+              <h3>Fast response</h3>
+              <p>Express dispatch in Saint-Laurent and Greater Montreal.</p>
+            </div>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                <path d="m9 12 2 2 4-5" />
+              </svg>
+            </div>
+            <div>
+              <h3>Free quote</h3>
+              <p>A clear estimate before any work begins.</p>
+            </div>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                <path d="M21 19a2 2 0 0 1-2 2h-1v-7h3v5Z" />
+                <path d="M3 19a2 2 0 0 0 2 2h1v-7H3v5Z" />
+              </svg>
+            </div>
+            <div>
+              <h3>Advice included</h3>
+              <p>We explain and advise — no jargon.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="emergency-box">
+          <div class="emergency-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 19 19.5 19.5 0 0 1 5 12.81 19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.62 2.6a2 2 0 0 1-.45 2.11L8 9.65a16 16 0 0 0 6.35 6.35l1.22-1.22a2 2 0 0 1 2.11-.45c.83.29 1.7.5 2.6.62A2 2 0 0 1 22 16.92Z" />
+            </svg>
+          </div>
+          <div class="emergency-copy">
+            <strong>Electrical emergency?</strong>
+            <span>Available 7 days a week, 7 AM to 9 PM, for fast response.</span>
+          </div>
+          <a href="tel:+15146620703" class="emergency-phone">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 19 19.5 19.5 0 0 1 5 12.81 19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.62 2.6a2 2 0 0 1-.45 2.11L8 9.65a16 16 0 0 0 6.35 6.35l1.22-1.22a2 2 0 0 1 2.11-.45c.83.29 1.7.5 2.6.62A2 2 0 0 1 22 16.92Z" />
+            </svg>
+            514 662-0703
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Carte formulaire -->
+      <div class="contact-card reveal reveal-delay-2">
+
+        <div class="form-heading">
+          <h3>We reply fast.</h3>
+          <p>Tell us what you need.</p>
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+          <div class="form-row">
+            <label>
+              <span>First name <em>*</em></span>
+              <input type="text" name="name" placeholder="Your first name" required>
+            </label>
+            <label>
+              <span>Phone <em>*</em></span>
+              <input type="tel" name="phone" placeholder="Your phone number" required>
+            </label>
+          </div>
+
+          <label>
+            <span>Email <em>*</em></span>
+            <input type="email" name="email" placeholder="Your email" required>
+          </label>
+
+          <label>
+            <span>Type of request <em>*</em></span>
+            <select name="request" required>
+              <option value="">Select your request</option>
+              <option value="depannage">Urgent repair</option>
+              <option value="installation">Installation</option>
+              <option value="normes">Code compliance</option>
+              <option value="renovation">Renovation</option>
+              <option value="borne">EV charger</option>
+              <option value="autre">Other</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Your message <em>*</em></span>
+            <textarea name="message" placeholder="Describe your project or your needs..." required></textarea>
+          </label>
+
+          <label class="consent-row">
+            <input type="checkbox" name="consent" required>
+            <span>I agree that SAMOX Electrique may use the information provided (first name, phone, email,
+              message) for the sole purpose of processing my request and contacting me back. It is never shared
+              or used for advertising. <a href="politique-confidentialite.html#en">Privacy policy</a> <em>*</em></span>
+          </label>
+
+          <button type="submit">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m22 2-7 20-4-9-9-4Z" />
+              <path d="M22 2 11 13" />
+            </svg>
+            Send my request
+          </button>
+        </form>
+
+        <div class="contact-divider"></div>
+
+        <div class="coords">
+          <h3>Contact details</h3>
+          <div class="coords-grid">
+
+            <div class="coord-item">
+              <div class="coord-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <strong>Address</strong>
+                <span>Le 730 Montpellier — Le Manoir Phase 3<br>730 Boul Montpellier<br>Saint-Laurent, QC H4L 5B3</span>
+              </div>
+            </div>
+
+            <div class="coord-item">
+              <div class="coord-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 19 19.5 19.5 0 0 1 5 12.81 19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.62 2.6a2 2 0 0 1-.45 2.11L8 9.65a16 16 0 0 0 6.35 6.35l1.22-1.22a2 2 0 0 1 2.11-.45c.83.29 1.7.5 2.6.62A2 2 0 0 1 22 16.92Z" />
+                </svg>
+              </div>
+              <div>
+                <strong>Phone</strong>
+                <span><a href="tel:+15146620703">+1 514 662-0703</a><br>7 days a week — 7 AM to 9 PM</span>
+              </div>
+            </div>
+
+            <div class="coord-item">
+              <div class="coord-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <path d="m3 7 9 6 9-6" />
+                </svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <span><a href="mailto:samoxelectrique@gmail.com">samoxelectrique@gmail.com</a><br>Fast reply</span>
+              </div>
+            </div>
+
+            <div class="coord-item">
+              <div class="coord-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+              </div>
+              <div>
+                <strong>Hours</strong>
+                <span>Monday to Sunday<br>7:00 AM – 9:00 PM</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Google Maps: loaded only after explicit consent (GDPR art. 6 & 7 / Law 25) -->
+        <div class="contact-map">
+          <div class="map-consent-box" id="mapConsent">
+            <p>The interactive map is provided by Google Maps. By displaying it, you agree that data
+              (IP address, cookies) will be transmitted to Google.
+              <a href="politique-confidentialite.html#en">Privacy policy</a></p>
+            <button type="button" id="mapConsentBtn">Show Google Maps</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+     FOOTER
+  ═══════════════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+
+    <div class="footer-main">
+
+      <!-- Marque -->
+      <div class="footer-brand">
+        <a href="#accueil" class="footer-logo" aria-label="SAMOX Electrique — home">
+          <span class="footer-logo-img">
+            <img loading="lazy" src="logo-samox-320.png" alt="Logo SAMOX Electrique">
+          </span>
+          <span class="footer-logo-text">
+            <strong>SAMOX</strong>
+            <span>Electrique · Québec</span>
+          </span>
+        </a>
+        <p class="footer-tagline">Professional electrician in Saint-Laurent, Montreal. Fast service,
+          free quotes and meticulous work that meets Quebec standards.</p>
+        <div class="footer-socials">
+          <a href="https://www.google.com/maps?q=730+Boulevard+Montpellier,+Saint-Laurent,+QC+H4L+5B3" target="_blank"
+            rel="noopener" class="footer-social-btn" aria-label="Google Maps">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </a>
+          <a href="#" class="footer-social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3Z" />
+            </svg>
+          </a>
+          <a href="#" class="footer-social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Electrical repairs</a></li>
+          <li><a href="#services">Electrical installation</a></li>
+          <li><a href="#services">Code compliance</a></li>
+          <li><a href="#services">Electrical renovation</a></li>
+          <li><a href="#services">EV chargers</a></li>
+          <li><a href="#services">Custom lighting</a></li>
+        </ul>
+      </div>
+
+      <!-- Navigation -->
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#accueil">Home</a></li>
+          <li><a href="#services">What we do</a></li>
+          <li><a href="#realisations">Our work</a></li>
+          <li><a href="#pourquoi">Why choose us</a></li>
+          <li><a href="#zone">Service area</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>Contact</h4>
+
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </div>
+          <div>
+            <strong>Address</strong>
+            <span>Le 730 Montpellier — Le Manoir Phase 3<br>730 Boul Montpellier<br>Saint-Laurent, QC H4L 5B3,
+              Canada</span>
+          </div>
+        </div>
+
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 19 19.5 19.5 0 0 1 5 12.81 19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.62 2.6a2 2 0 0 1-.45 2.11L8 9.65a16 16 0 0 0 6.35 6.35l1.22-1.22a2 2 0 0 1 2.11-.45c.83.29 1.7.5 2.6.62A2 2 0 0 1 22 16.92Z" />
+            </svg>
+          </div>
+          <div>
+            <strong>Phone</strong>
+            <span><a href="tel:+15146620703">+1 514 662-0703</a><br>7 days a week — 7 AM to 9 PM</span>
+          </div>
+        </div>
+
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="m3 7 9 6 9-6" />
+            </svg>
+          </div>
+          <div>
+            <strong>Email</strong>
+            <span><a href="mailto:samoxelectrique@gmail.com">samoxelectrique@gmail.com</a></span>
+          </div>
+        </div>
+
+        <div class="footer-emergency">
+          <span>Electrical emergency — 7 days a week</span>
+          <a href="tel:+15146620703">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 19 19.5 19.5 0 0 1 5 12.81 19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.62 2.6a2 2 0 0 1-.45 2.11L8 9.65a16 16 0 0 0 6.35 6.35l1.22-1.22a2 2 0 0 1 2.11-.45c.83.29 1.7.5 2.6.62A2 2 0 0 1 22 16.92Z" />
+            </svg>
+            +1 514 662-0703
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <hr class="footer-sep">
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 SAMOX Electrique — Electrician in Saint-Laurent, Quebec. All rights reserved. ·
+        <a href="politique-confidentialite.html#en">Legal notice</a> · <a href="politique-confidentialite.html#en">Privacy policy</a></p>
+      <div class="footer-badges">
+        <span class="footer-badge">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+            <path d="m9 12 2 2 4-5" />
+          </svg>
+          Guaranteed work
+        </span>
+        <span class="footer-badge">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6" />
+            <path d="M9 15h6" />
+            <path d="M9 18h4" />
+          </svg>
+          Free quote
+        </span>
+        <span class="footer-badge">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+          </svg>
+          Quebec standards
+        </span>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Barre d'appel flottante mobile -->
+  <div class="float-call-bar" role="complementary" aria-label="Quick call">
+    <a href="tel:+15146620703" class="float-call-btn">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 19 19.5 19.5 0 0 1 5 12.81 19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.62 2.6a2 2 0 0 1-.45 2.11L8 9.65a16 16 0 0 0 6.35 6.35l1.22-1.22a2 2 0 0 1 2.11-.45c.83.29 1.7.5 2.6.62A2 2 0 0 1 22 16.92Z" />
+      </svg>
+      Call — 514 662-0703
+    </a>
+    <a href="https://wa.me/15146620703" class="float-wa-btn" aria-label="WhatsApp" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="#fff"
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+        <path fill="#fff"
+          d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.985-1.406A9.953 9.953 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a7.952 7.952 0 0 1-4.076-1.118l-.292-.174-3.038.857.822-3.006-.19-.31A7.963 7.963 0 0 1 4 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z" />
+      </svg>
+    </a>
+  </div>
+
+  <script>
+    /* ═══════════════════════════════════════════════
+       RGPD — GOOGLE MAPS APRES CONSENTEMENT
+    ═══════════════════════════════════════════════ */
+    (function () {
+      var box = document.getElementById('mapConsent');
+      var btn = document.getElementById('mapConsentBtn');
+      if (!box || !btn) return;
+      btn.addEventListener('click', function () {
+        var iframe = document.createElement('iframe');
+        iframe.src = 'https://www.google.com/maps?q=730+Boulevard+Montpellier,+Saint-Laurent,+QC+H4L+5B3,+Canada&output=embed';
+        iframe.width = '100%';
+        iframe.height = '220';
+        iframe.loading = 'lazy';
+        iframe.referrerPolicy = 'no-referrer-when-downgrade';
+        iframe.title = 'SAMOX Electrique — 730 Boul Montpellier, Saint-Laurent, QC H4L 5B3';
+        iframe.setAttribute('allowfullscreen', '');
+        box.replaceWith(iframe);
+      });
+    })();
+
+    /* ═══════════════════════════════════════════════
+       HEADER — état "scrolled"
+    ═══════════════════════════════════════════════ */
+    (function () {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      function onScroll() {
+        header.classList.toggle('scrolled', window.scrollY > 24);
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+
+    /* ═══════════════════════════════════════════════
+       MENU MOBILE
+    ═══════════════════════════════════════════════ */
+    (function () {
+      var burger = document.getElementById('burgerBtn');
+      var menu = document.getElementById('mobileMenu');
+      if (!burger || !menu) return;
+
+      function toggle(open) {
+        var isOpen = typeof open === 'boolean' ? open : !menu.classList.contains('open');
+        menu.classList.toggle('open', isOpen);
+        burger.classList.toggle('open', isOpen);
+        burger.setAttribute('aria-expanded', String(isOpen));
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+      }
+
+      burger.addEventListener('click', function () { toggle(); });
+      menu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () { toggle(false); });
+      });
+    })();
+
+    /* ═══════════════════════════════════════════════
+       UX — SCROLL REVEAL
+    ═══════════════════════════════════════════════ */
+    (function () {
+      var revealObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.10 });
+
+      document.querySelectorAll('.reveal').forEach(function (el) {
+        revealObserver.observe(el);
+      });
+    })();
+
+    /* ═══════════════════════════════════════════════
+       UX — COMPTEURS ANIMÉS
+    ═══════════════════════════════════════════════ */
+    (function () {
+      function animateCount(el) {
+        var target = parseInt(el.dataset.count, 10);
+        var prefix = el.dataset.prefix || '';
+        var suffix = el.dataset.suffix || '';
+        var duration = 1400;
+        var start = performance.now();
+        function step(now) {
+          var progress = Math.min((now - start) / duration, 1);
+          var ease = 1 - Math.pow(1 - progress, 3);
+          el.textContent = prefix + Math.round(target * ease) + suffix;
+          if (progress < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      }
+
+      var counterObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            animateCount(entry.target);
+            counterObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      document.querySelectorAll('[data-count]').forEach(function (el) {
+        counterObserver.observe(el);
+      });
+    })();
+
+    /* ═══════════════════════════════════════════════
+       UX — PARALLAXE HERO
+    ═══════════════════════════════════════════════ */
+    (function () {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      var heroBg = document.querySelector('.hero-bg');
+      if (!heroBg) return;
+      var ticking = false;
+      function onScroll() {
+        if (!ticking) {
+          requestAnimationFrame(function () {
+            var scrolled = window.scrollY;
+            if (scrolled < window.innerHeight * 1.5) {
+              heroBg.style.transform = 'translateY(' + (scrolled * 0.24) + 'px)';
+            }
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+    })();
+
+    /* ═══════════════════════════════════════════════
+       UX — ACTIVE NAV AU SCROLL
+    ═══════════════════════════════════════════════ */
+    (function () {
+      var sections = document.querySelectorAll('section[id]');
+      var navLinks = document.querySelectorAll('.main-nav a');
+      if (!navLinks.length) return;
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            navLinks.forEach(function (link) { link.classList.remove('active'); });
+            var active = document.querySelector('.main-nav a[href="#' + entry.target.id + '"]');
+            if (active) active.classList.add('active');
+          }
+        });
+      }, { threshold: 0.35 });
+      sections.forEach(function (s) { io.observe(s); });
+    })();
+
+    /* ═══════════════════════════════════════════════
+       CARROUSEL AVIS GOOGLE
+    ═══════════════════════════════════════════════ */
+    (function () {
+      var reviews = [
+        {
+          name: 'Thomas D.',
+          avatar: 'T',
+          date: '2 weeks ago',
+          stars: 5,
+          text: 'Fast response after a total power failure in our condo. The electrician arrived in under an hour, very professional. Problem solved efficiently. Highly recommended!'
+        },
+        {
+          name: 'Marie L.',
+          avatar: 'M',
+          date: '1 month ago',
+          stars: 5,
+          text: 'Electrical panel of my apartment brought up to code. Impeccable work, quote respected, no bad surprises. Serious and punctual team. Very satisfied.'
+        },
+        {
+          name: 'Pierre M.',
+          avatar: 'P',
+          date: '3 weeks ago',
+          stars: 5,
+          text: 'I hired SAMOX Electrique for the complete wiring of a new kitchen. Clean cabling, well-placed outlets, deadline met. Competitive price and top-notch service.'
+        },
+        {
+          name: 'Sophie K.',
+          avatar: 'S',
+          date: '5 days ago',
+          stars: 5,
+          text: 'Emergency call on a Saturday night — main breaker tripped. Immediate response, arrived in 45 minutes. Problem identified and fixed quickly. Honest pricing. Thank you!'
+        },
+        {
+          name: 'Antoine R.',
+          avatar: 'A',
+          date: '2 months ago',
+          stars: 5,
+          text: 'Complete electrical renovation of my studio in Saint-Laurent. Great advice, careful and clean work. Excellent value for money. The right choice in Montreal.'
+        }
+      ];
+
+      var container = document.getElementById('avisCards');
+      var dotsContainer = document.getElementById('avisDots');
+      if (!container || !dotsContainer) return;
+
+      var current = 0;
+      var timer = null;
+      var cards = [];
+      var dots = [];
+
+      reviews.forEach(function (r, i) {
+        var stars = '';
+        for (var s = 0; s < r.stars; s++) stars += '★';
+        var card = document.createElement('div');
+        card.className = 'avis-card' + (i === 0 ? ' active' : '');
+        card.innerHTML =
+          '<div class="avis-card-stars">' + stars + '</div>' +
+          '<p class="avis-card-quote">“' + r.text + '”</p>' +
+          '<div class="avis-card-line"></div>' +
+          '<div class="avis-card-author">' +
+          '<div class="avis-card-avatar">' + r.avatar + '</div>' +
+          '<div>' +
+          '<strong>' + r.name + '</strong>' +
+          '<span>' + r.date + '</span>' +
+          '</div>' +
+          '</div>';
+        container.appendChild(card);
+        cards.push(card);
+      });
+
+      reviews.forEach(function (_, i) {
+        var dot = document.createElement('button');
+        dot.className = 'avis-dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Review ' + (i + 1));
+        dot.addEventListener('click', function () { goTo(i); });
+        dotsContainer.appendChild(dot);
+        dots.push(dot);
+      });
+
+      function goTo(index) {
+        cards[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        current = (index + reviews.length) % reviews.length;
+        cards[current].classList.add('active');
+        dots[current].classList.add('active');
+      }
+
+      function next() { goTo(current + 1); }
+
+      timer = setInterval(next, 6000);
+
+      container.addEventListener('mouseenter', function () { clearInterval(timer); });
+      container.addEventListener('mouseleave', function () { timer = setInterval(next, 6000); });
+    })();
+  </script>
+</body>
+
+</html>
