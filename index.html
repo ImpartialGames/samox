@@ -286,50 +286,49 @@
     ═══════════════════════════════════════════════════ */
     .site-header {
       position: fixed;
-      top: 18px;
+      top: 16px;
       left: 0;
       right: 0;
       margin-inline: auto;
-      width: min(1240px, calc(100% - 40px));
+      width: min(1180px, calc(100% - 40px));
       z-index: 60;
-      height: 74px;
-      padding: 0 14px 0 14px;
+      height: 62px;
+      padding: 0 10px 0 12px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
-      border-radius: 18px;
-      border: 1px solid rgba(255, 255, 255, 0.8);
-      background: rgba(255, 255, 255, 0.72);
-      box-shadow: 0 10px 34px rgba(12, 13, 15, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(22px) saturate(1.4);
-      -webkit-backdrop-filter: blur(22px) saturate(1.4);
+      gap: 18px;
+      border-radius: 16px;
+      border: 1px solid rgba(12, 13, 15, 0.05);
+      background: rgba(255, 255, 255, 0.62);
+      box-shadow: 0 6px 24px rgba(12, 13, 15, 0.06);
+      backdrop-filter: blur(24px) saturate(1.5);
+      -webkit-backdrop-filter: blur(24px) saturate(1.5);
       transition: box-shadow 0.3s, background 0.3s;
     }
 
     .site-header.scrolled {
-      background: rgba(255, 255, 255, 0.92);
-      box-shadow: 0 14px 40px rgba(12, 13, 15, 0.12);
+      background: rgba(255, 255, 255, 0.88);
+      box-shadow: 0 10px 30px rgba(12, 13, 15, 0.09);
     }
 
     .brand {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 12px;
       text-decoration: none;
       flex-shrink: 0;
     }
 
     .brand-logo {
-      width: 50px;
-      height: 50px;
-      border-radius: 13px;
+      width: 40px;
+      height: 40px;
+      border-radius: 11px;
       background: var(--sx-black);
       overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 6px 16px rgba(12, 13, 15, 0.24);
     }
 
     .brand-logo img {
@@ -339,37 +338,28 @@
       object-position: center 38%;
     }
 
-    .brand-copy { display: flex; flex-direction: column; gap: 5px; }
+    .brand-copy { display: flex; flex-direction: column; }
 
     .brand-copy strong {
       font-family: var(--font-display);
       color: var(--sx-ink);
-      font-size: 20px;
+      font-size: 17px;
       line-height: 1;
       font-weight: 800;
-      letter-spacing: 0.02em;
-    }
-
-    .brand-copy small {
-      color: var(--sx-orange-deep);
-      font-size: 10.5px;
-      line-height: 1;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
+      letter-spacing: 0.04em;
     }
 
     .main-nav {
       display: flex;
       align-items: center;
-      gap: 34px;
+      gap: 30px;
     }
 
     .main-nav a {
       position: relative;
-      color: var(--sx-ink);
+      color: #5A5D64;
       text-decoration: none;
-      font-size: 14.5px;
+      font-size: 14px;
       font-weight: 500;
       letter-spacing: -0.01em;
       transition: color 0.22s;
@@ -378,36 +368,43 @@
     .main-nav a::after {
       content: "";
       position: absolute;
-      left: 0;
-      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -7px;
       width: 0;
-      height: 2px;
-      border-radius: 2px;
+      height: 3px;
+      border-radius: 3px;
       background: var(--sx-orange);
       transition: width 0.28s ease;
     }
 
     .main-nav a:hover,
-    .main-nav a.active { color: var(--sx-orange-deep); }
+    .main-nav a.active { color: var(--sx-ink); }
 
-    .main-nav a:hover::after,
-    .main-nav a.active::after { width: 100%; }
+    .main-nav a:hover::after { width: 12px; }
+    .main-nav a.active::after { width: 20px; }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
 
     .header-phone-btn {
-      height: 48px;
-      padding: 0 22px;
+      height: 42px;
+      padding: 0 18px;
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      gap: 9px;
       border-radius: 999px;
       background: var(--sx-black);
       color: #fff;
       text-decoration: none;
       font-family: var(--font-display);
-      font-size: 14.5px;
+      font-size: 14px;
       font-weight: 600;
       letter-spacing: 0.01em;
-      box-shadow: 0 8px 20px rgba(12, 13, 15, 0.22);
       transition: background 0.25s, transform 0.25s, box-shadow 0.25s;
       flex-shrink: 0;
     }
@@ -415,33 +412,39 @@
     .header-phone-btn:hover {
       background: var(--sx-orange);
       transform: translateY(-1px);
-      box-shadow: 0 12px 26px var(--sx-orange-glow);
+      box-shadow: 0 10px 22px var(--sx-orange-glow);
     }
 
     .lang-switch {
+      position: relative;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      height: 40px;
-      padding: 0 14px;
-      border-radius: 999px;
-      border: 1.5px solid var(--sx-border);
-      background: #fff;
-      color: var(--sx-ink);
+      height: 42px;
+      padding: 0 12px;
+      margin-left: 8px;
+      color: #5A5D64;
       text-decoration: none;
       font-family: var(--font-display);
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 700;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.1em;
       flex-shrink: 0;
-      transition: border-color 0.25s, color 0.25s, transform 0.25s;
+      transition: color 0.25s;
     }
 
-    .lang-switch:hover {
-      border-color: var(--sx-orange);
-      color: var(--sx-orange-deep);
-      transform: translateY(-1px);
+    .lang-switch::before {
+      content: "";
+      position: absolute;
+      left: -8px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 18px;
+      background: rgba(12, 13, 15, 0.12);
     }
+
+    .lang-switch:hover { color: var(--sx-orange-deep); }
 
     .mobile-menu .mobile-menu-lang {
       font-size: 16px;
@@ -464,11 +467,12 @@
     /* ── Burger mobile ── */
     .burger {
       display: none;
-      width: 46px;
-      height: 46px;
-      border: 1px solid var(--sx-border);
-      border-radius: 12px;
-      background: #fff;
+      width: 42px;
+      height: 42px;
+      margin-left: 6px;
+      border: none;
+      border-radius: 11px;
+      background: transparent;
       cursor: pointer;
       align-items: center;
       justify-content: center;
@@ -2282,7 +2286,7 @@
       .main-nav { display: none; }
       .burger { display: flex; }
       .header-phone-btn span { display: none; }
-      .header-phone-btn { padding: 0 15px; }
+      .header-phone-btn { width: 42px; padding: 0; justify-content: center; }
 
       .services-grid { grid-template-columns: repeat(2, 1fr); }
       .why-grid { grid-template-columns: 1fr; gap: 70px; }
@@ -2295,9 +2299,11 @@
     }
 
     @media (max-width: 720px) {
-      .site-header { top: 12px; width: calc(100% - 24px); height: 66px; padding: 0 10px; }
-      .brand-copy small { display: none; }
-      .brand-logo { width: 44px; height: 44px; }
+      .site-header { top: 12px; width: calc(100% - 24px); height: 58px; padding: 0 8px 0 10px; }
+      .brand-logo { width: 36px; height: 36px; border-radius: 10px; }
+      .brand-copy strong { font-size: 16px; }
+      .header-phone-btn { height: 40px; }
+      .lang-switch { padding: 0 10px; }
 
       .hero { padding-top: 120px; padding-bottom: 80px; }
       .hero-trust-bar {
@@ -2387,7 +2393,6 @@
       </span>
       <span class="brand-copy">
         <strong>SAMOX</strong>
-        <small>Electrique · Québec</small>
       </span>
     </a>
 
@@ -2400,19 +2405,21 @@
       <a href="#contact">Contact</a>
     </nav>
 
-    <a href="tel:+15146620703" class="header-phone-btn">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path
-          d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 19 19.5 19.5 0 0 1 5 12.81 19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.62 2.6a2 2 0 0 1-.45 2.11L8 9.65a16 16 0 0 0 6.35 6.35l1.22-1.22a2 2 0 0 1 2.11-.45c.83.29 1.7.5 2.6.62A2 2 0 0 1 22 16.92Z" />
-      </svg>
-      <span>514&nbsp;662-0703</span>
-    </a>
+    <div class="header-right">
+      <a href="tel:+15146620703" class="header-phone-btn">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 19 19.5 19.5 0 0 1 5 12.81 19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.62 2.6a2 2 0 0 1-.45 2.11L8 9.65a16 16 0 0 0 6.35 6.35l1.22-1.22a2 2 0 0 1 2.11-.45c.83.29 1.7.5 2.6.62A2 2 0 0 1 22 16.92Z" />
+        </svg>
+        <span>514&nbsp;662-0703</span>
+      </a>
 
-    <a href="en.html" class="lang-switch" lang="en" hreflang="en" aria-label="English version">EN</a>
+      <a href="en.html" class="lang-switch" lang="en" hreflang="en" aria-label="English version">EN</a>
 
-    <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+      <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
   <!-- Menu mobile -->
