@@ -156,6 +156,120 @@
     }
 
     /* ═══════════════════════════════════════════════════
+       PRÉLOADER — animation d'entrée
+    ═══════════════════════════════════════════════════ */
+    .preloader { display: none; }
+
+    html.js .preloader {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      background: radial-gradient(900px 620px at 50% 58%, #17181C 0%, #0A0B0D 72%);
+      transition: transform 0.85s cubic-bezier(0.76, 0, 0.24, 1), visibility 0s linear 0.85s;
+      will-change: transform;
+    }
+
+    html.js .preloader.done {
+      transform: translateY(-100%);
+      visibility: hidden;
+    }
+
+    html.js .preloader.quick {
+      transition-duration: 0.45s;
+    }
+
+    body.is-loading { overflow: hidden; }
+
+    .preloader-bolt {
+      width: 86px;
+      height: 86px;
+      filter: drop-shadow(0 0 26px rgba(245, 130, 32, 0.55));
+      animation: bolt-pop 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .preloader-bolt path {
+      fill: var(--sx-orange);
+      animation: bolt-flicker 1.6s ease-in-out 0.9s infinite;
+    }
+
+    @keyframes bolt-pop {
+      0% { transform: scale(0.5) rotate(-8deg); opacity: 0; }
+      60% { transform: scale(1.1) rotate(2deg); opacity: 1; }
+      100% { transform: scale(1) rotate(0); opacity: 1; }
+    }
+
+    @keyframes bolt-flicker {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.72; }
+    }
+
+    .preloader-word {
+      display: flex;
+      gap: 3px;
+      font-family: var(--font-display);
+      font-size: 42px;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: 0.1em;
+      line-height: 1;
+    }
+
+    .preloader-word span {
+      display: inline-block;
+      animation: letter-up 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .preloader-word span:nth-child(1) { animation-delay: 0.30s; }
+    .preloader-word span:nth-child(2) { animation-delay: 0.37s; }
+    .preloader-word span:nth-child(3) { animation-delay: 0.44s; }
+    .preloader-word span:nth-child(4) { animation-delay: 0.51s; }
+    .preloader-word span:nth-child(5) { animation-delay: 0.58s; }
+
+    @keyframes letter-up {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .preloader-tag {
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--sx-orange);
+      animation: letter-up 0.55s 0.72s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .preloader-bar {
+      width: 184px;
+      height: 3px;
+      margin-top: 8px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      overflow: hidden;
+      animation: letter-up 0.55s 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .preloader-bar i {
+      display: block;
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #FF9840, var(--sx-orange-deep));
+      transform-origin: left;
+      transform: scaleX(0);
+      animation: bar-fill 1.5s 0.55s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    @keyframes bar-fill {
+      to { transform: scaleX(1); }
+    }
+
+    /* ═══════════════════════════════════════════════════
        HEADER
     ═══════════════════════════════════════════════════ */
     .site-header {
@@ -2231,6 +2345,20 @@
 <body>
 
   <!-- ═══════════════════════════════════════════════════
+     PRÉLOADER
+  ═══════════════════════════════════════════════════ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <svg class="preloader-bolt" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" />
+    </svg>
+    <div class="preloader-word">
+      <span>S</span><span>A</span><span>M</span><span>O</span><span>X</span>
+    </div>
+    <div class="preloader-tag">Electrique · Québec</div>
+    <div class="preloader-bar"><i></i></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════
      HEADER
   ═══════════════════════════════════════════════════ -->
   <header class="site-header" id="siteHeader">
@@ -2324,19 +2452,7 @@
 
       <!-- Badge Google -->
       <div class="google-badge">
-        <svg class="google-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path fill="#4285F4"
-            d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
-          <path fill="#34A853"
-            d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
-          <path fill="#FBBC05"
-            d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
-          <path fill="#EA4335"
-            d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
-        </svg>
-        <span class="google-badge-label">Avis Google</span>
-        <span class="google-stars">★★★★★</span>
-        <span class="google-score">5,0/5</span>
+        <span class="google-badge-label">Merci à nos clients du Grand Montréal pour leur confiance</span>
       </div>
     </div>
 
@@ -2560,25 +2676,10 @@
 
           <div class="review-card">
             <div class="review-google">
-              <div class="google-g-row">
-                <svg class="google-g-icon" viewBox="0 0 48 48" aria-hidden="true">
-                  <path fill="#4285F4"
-                    d="M47.5 24.6c0-1.6-.1-3.1-.4-4.6H24v8.7h13.2c-.6 3-2.3 5.5-4.9 7.2v6h7.9c4.6-4.3 7.3-10.6 7.3-17.3z" />
-                  <path fill="#34A853"
-                    d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.9-6c-2.1 1.4-4.8 2.3-8 2.3-6.1 0-11.3-4.1-13.2-9.7H2.5v6.2C6.5 42.6 14.7 48 24 48z" />
-                  <path fill="#FBBC05"
-                    d="M10.8 28.8c-.5-1.4-.7-2.9-.7-4.8s.2-3.4.7-4.8v-6.2H2.5C.9 16.4 0 20.1 0 24s.9 7.6 2.5 10.8l8.3-6z" />
-                  <path fill="#EA4335"
-                    d="M24 9.5c3.5 0 6.6 1.2 9 3.5l6.7-6.7C35.9 2.5 30.5 0 24 0 14.7 0 6.5 5.4 2.5 13.2l8.3 6.2C12.7 13.6 17.9 9.5 24 9.5z" />
-                </svg>
-                <div class="google-g-text">
-                  <strong>Google</strong>
-                  <span>Avis certifiés</span>
-                </div>
+              <div class="google-g-text">
+                <strong>Témoignage</strong>
+                <span>Client du Grand Montréal</span>
               </div>
-              <div class="review-score">5,0<span>/5</span></div>
-              <div class="review-stars">★★★★★</div>
-              <div class="review-google-base">Basé sur 55 avis</div>
             </div>
 
             <div class="review-sep"></div>
@@ -2588,10 +2689,10 @@
               <p class="testimonial-text">Intervention rapide et soignée. Le technicien était professionnel et a tout
                 remis aux normes. Je recommande vivement SAMOX Electrique !</p>
               <div class="testimonial-author">
-                <div class="testimonial-avatar">T</div>
+                <div class="testimonial-avatar">❝</div>
                 <div>
-                  <strong>Thomas D.</strong>
-                  <span>Saint-Laurent · il y a 2 semaines</span>
+                  <strong>Un client</strong>
+                  <span>Saint-Laurent</span>
                 </div>
               </div>
             </div>
@@ -2825,19 +2926,18 @@
     <div class="avis-container">
 
       <div class="avis-header reveal">
-        <span class="section-kicker kicker-center">Nos avis Google</span>
+        <span class="section-kicker kicker-center">Témoignages</span>
         <h2>Ce que disent nos clients</h2>
-        <p>Des avis authentiques. La confiance, ça se mérite — ça ne s'invente pas.</p>
+        <p>Ce que nos clients retiennent de nos interventions.</p>
       </div>
 
       <div class="avis-grid">
 
         <div class="avis-left reveal">
           <div class="avis-score-row">
-            <div class="avis-score-big">5,0</div>
+            <div class="avis-score-big">7&nbsp;j/7</div>
             <div class="avis-score-detail">
-              <div class="avis-score-stars">★★★★★</div>
-              <div class="avis-score-label">Basé sur 55 avis Google</div>
+              <div class="avis-score-label">Au service de nos clients<br>du Grand Montréal, de 7&nbsp;h à 21&nbsp;h</div>
             </div>
           </div>
           <div class="avis-sep"></div>
@@ -2846,17 +2946,7 @@
             nous.</p>
           <div class="avis-dots" id="avisDots"></div>
           <div class="avis-badge">
-            <svg class="avis-badge-g" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path fill="#4285F4"
-                d="M44.5 20H24v8h11.7C34.2 33.6 29.7 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l5.7-5.7C34.5 5.1 29.5 3 24 3 12.4 3 3 12.4 3 24s9.4 21 21 21c10.9 0 20-7.9 20-21 0-1.4-.1-2.7-.5-4z" />
-              <path fill="#34A853"
-                d="M6.3 14.7l6.6 4.8C14.4 16 18.9 13 24 13c3.1 0 5.9 1.1 8.1 2.9l5.7-5.7C34.5 5.1 29.5 3 24 3 16.3 3 9.7 7.9 6.3 14.7z" />
-              <path fill="#FBBC05"
-                d="M24 45c5.5 0 10.5-2 14.2-5.4l-6.6-5.4C29.5 35.9 26.9 37 24 37c-5.7 0-10.2-3.4-11.7-8.1l-6.6 4.8C9.7 40.1 16.3 45 24 45z" />
-              <path fill="#EA4335"
-                d="M44.5 20H24v8h11.7c-.7 2.1-2 3.9-3.8 5.2l6.6 5.4C42.4 35.1 45 30 45 24c0-1.4-.1-2.7-.5-4z" />
-            </svg>
-            <span>Avis vérifiés Google</span>
+            <span>Témoignages transmis par nos clients</span>
           </div>
         </div>
 
@@ -3431,6 +3521,27 @@
 
   <script>
     /* ═══════════════════════════════════════════════
+       FORMULAIRE — ENVOI PAR COURRIEL (aucun serveur
+       tiers : les données ne quittent pas le visiteur)
+    ═══════════════════════════════════════════════ */
+    (function () {
+      var form = document.querySelector('.contact-form');
+      if (!form) return;
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var d = new FormData(form);
+        var body = 'Prénom : ' + d.get('name') +
+          '\nTéléphone : ' + d.get('phone') +
+          '\nCourriel : ' + d.get('email') +
+          '\nType de demande : ' + d.get('request') +
+          '\n\n' + d.get('message');
+        location.href = 'mailto:samoxelectrique@gmail.com' +
+          '?subject=' + encodeURIComponent('Demande de soumission — ' + d.get('request')) +
+          '&body=' + encodeURIComponent(body);
+      });
+    })();
+
+    /* ═══════════════════════════════════════════════
        RGPD — GOOGLE MAPS APRES CONSENTEMENT
     ═══════════════════════════════════════════════ */
     (function () {
@@ -3448,6 +3559,39 @@
         iframe.setAttribute('allowfullscreen', '');
         box.replaceWith(iframe);
       });
+    })();
+
+    /* ═══════════════════════════════════════════════
+       PRÉLOADER — animation d'entrée
+    ═══════════════════════════════════════════════ */
+    (function () {
+      var pre = document.getElementById('preloader');
+      if (!pre) return;
+      document.body.classList.add('is-loading');
+
+      var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var seen = false;
+      try { seen = sessionStorage.getItem('samox-intro') === '1'; } catch (e) { }
+
+      /* Intro complète à la première visite, écourtée ensuite */
+      var delay = reduced ? 0 : (seen ? 450 : 2100);
+      if (seen || reduced) pre.classList.add('quick');
+
+      var started = false;
+      function dismiss() {
+        if (started) return;
+        started = true;
+        setTimeout(function () {
+          pre.classList.add('done');
+          document.body.classList.remove('is-loading');
+          try { sessionStorage.setItem('samox-intro', '1'); } catch (e) { }
+          setTimeout(function () { if (pre.parentNode) pre.parentNode.removeChild(pre); }, 1000);
+        }, delay);
+      }
+
+      if (document.readyState === 'complete') dismiss();
+      else window.addEventListener('load', dismiss);
+      setTimeout(dismiss, 3600); /* sécurité si le chargement traîne */
     })();
 
     /* ═══════════════════════════════════════════════
@@ -3582,39 +3726,41 @@
        CARROUSEL AVIS GOOGLE
     ═══════════════════════════════════════════════ */
     (function () {
+      /* AVIS ANONYMISÉS (RGPD art. 6 / Loi 25) — à remplacer par de véritables avis
+         clients, avec leur consentement écrit, avant toute personnalisation. */
       var reviews = [
         {
-          name: 'Thomas D.',
-          avatar: 'T',
-          date: 'Il y a 2 semaines',
+          name: 'Client du Grand Montréal',
+          avatar: '❝',
+          date: '',
           stars: 5,
           text: 'Intervention rapide suite à une panne totale dans notre condo. L\'électricien est arrivé en moins d\'une heure, très professionnel. Problème résolu efficacement. Je recommande vivement !'
         },
         {
-          name: 'Marie L.',
-          avatar: 'M',
-          date: 'Il y a 1 mois',
+          name: 'Client du Grand Montréal',
+          avatar: '❝',
+          date: '',
           stars: 5,
           text: 'Mise aux normes du panneau électrique de mon appartement. Travail impeccable, soumission respectée, aucune mauvaise surprise. Équipe sérieuse et ponctuelle. Très satisfaite.'
         },
         {
-          name: 'Pierre M.',
-          avatar: 'P',
-          date: 'Il y a 3 semaines',
+          name: 'Client du Grand Montréal',
+          avatar: '❝',
+          date: '',
           stars: 5,
           text: 'J\'ai fait appel à SAMOX Electrique pour l\'installation complète d\'une nouvelle cuisine. Câblage propre, prises bien positionnées, délai tenu. Prix compétitif et service au top.'
         },
         {
-          name: 'Sophie K.',
-          avatar: 'S',
-          date: 'Il y a 5 jours',
+          name: 'Client du Grand Montréal',
+          avatar: '❝',
+          date: '',
           stars: 5,
           text: 'Dépannage en urgence un samedi soir — disjoncteur principal déclenché. Réponse immédiate, arrivée en 45 minutes. Problème identifié et réglé rapidement. Tarif honnête. Merci !'
         },
         {
-          name: 'Antoine R.',
-          avatar: 'A',
-          date: 'Il y a 2 mois',
+          name: 'Client du Grand Montréal',
+          avatar: '❝',
+          date: '',
           stars: 5,
           text: 'Rénovation électrique complète de mon studio à Saint-Laurent. Conseil pertinent, travail soigné et propre. Rapport qualité-prix excellent. C\'est la bonne adresse à Montréal.'
         }
@@ -3635,8 +3781,7 @@
         var card = document.createElement('div');
         card.className = 'avis-card' + (i === 0 ? ' active' : '');
         card.innerHTML =
-          '<div class="avis-card-stars">' + stars + '</div>' +
-          '<p class="avis-card-quote">“' + r.text + '”</p>' +
+                    '<p class="avis-card-quote">“' + r.text + '”</p>' +
           '<div class="avis-card-line"></div>' +
           '<div class="avis-card-author">' +
           '<div class="avis-card-avatar">' + r.avatar + '</div>' +
